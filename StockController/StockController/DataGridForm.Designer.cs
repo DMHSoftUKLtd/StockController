@@ -66,7 +66,7 @@ namespace StockController
             this.TsbFind.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TsbFind.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TsbFind.Name = "TsbFind";
-            this.TsbFind.Size = new System.Drawing.Size(41, 109);
+            this.TsbFind.Size = new System.Drawing.Size(41, 68);
             this.TsbFind.Text = "Find";
             this.TsbFind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -87,7 +87,7 @@ namespace StockController
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(400, 112);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 71);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -107,7 +107,7 @@ namespace StockController
             this.TsbRecord.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TsbRecord.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TsbRecord.Name = "TsbRecord";
-            this.TsbRecord.Size = new System.Drawing.Size(61, 109);
+            this.TsbRecord.Size = new System.Drawing.Size(61, 68);
             this.TsbRecord.Text = "Record";
             this.TsbRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -116,7 +116,7 @@ namespace StockController
             this.TsbDelete.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TsbDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TsbDelete.Name = "TsbDelete";
-            this.TsbDelete.Size = new System.Drawing.Size(56, 109);
+            this.TsbDelete.Size = new System.Drawing.Size(56, 68);
             this.TsbDelete.Text = "Delete";
             this.TsbDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -125,7 +125,7 @@ namespace StockController
             this.TsbRefresh.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TsbRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TsbRefresh.Name = "TsbRefresh";
-            this.TsbRefresh.Size = new System.Drawing.Size(63, 109);
+            this.TsbRefresh.Size = new System.Drawing.Size(63, 68);
             this.TsbRefresh.Text = "Refresh";
             this.TsbRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -134,7 +134,7 @@ namespace StockController
             this.TsbPrint.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TsbPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TsbPrint.Name = "TsbPrint";
-            this.TsbPrint.Size = new System.Drawing.Size(45, 109);
+            this.TsbPrint.Size = new System.Drawing.Size(45, 68);
             this.TsbPrint.Text = "Print";
             this.TsbPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.TsbPrint.Visible = false;
@@ -144,7 +144,7 @@ namespace StockController
             this.TSBBalances.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TSBBalances.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TSBBalances.Name = "TSBBalances";
-            this.TSBBalances.Size = new System.Drawing.Size(71, 109);
+            this.TSBBalances.Size = new System.Drawing.Size(71, 68);
             this.TSBBalances.Text = "Balances";
             this.TSBBalances.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.TSBBalances.Visible = false;
@@ -154,7 +154,7 @@ namespace StockController
             this.TsbClose.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.TsbClose.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TsbClose.Name = "TsbClose";
-            this.TsbClose.Size = new System.Drawing.Size(49, 109);
+            this.TsbClose.Size = new System.Drawing.Size(49, 68);
             this.TsbClose.Text = "Close";
             this.TsbClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -174,7 +174,7 @@ namespace StockController
             // SplitContainer1.Panel2
             // 
             this.SplitContainer1.Panel2.Controls.Add(this.SplitContainer2);
-            this.SplitContainer1.Size = new System.Drawing.Size(400, 225);
+            this.SplitContainer1.Size = new System.Drawing.Size(800, 450);
             this.SplitContainer1.SplitterDistance = 71;
             this.SplitContainer1.SplitterWidth = 8;
             this.SplitContainer1.TabIndex = 3;
@@ -195,8 +195,8 @@ namespace StockController
             // SplitContainer2.Panel2
             // 
             this.SplitContainer2.Panel2.Controls.Add(this.StatusStrip1);
-            this.SplitContainer2.Size = new System.Drawing.Size(400, 146);
-            this.SplitContainer2.SplitterDistance = 100;
+            this.SplitContainer2.Size = new System.Drawing.Size(800, 371);
+            this.SplitContainer2.SplitterDistance = 321;
             this.SplitContainer2.SplitterWidth = 8;
             this.SplitContainer2.TabIndex = 0;
             // 
@@ -211,7 +211,7 @@ namespace StockController
             this.DgvRecords.Name = "DgvRecords";
             this.DgvRecords.ReadOnly = true;
             this.DgvRecords.RowHeadersWidth = 51;
-            this.DgvRecords.Size = new System.Drawing.Size(400, 100);
+            this.DgvRecords.Size = new System.Drawing.Size(800, 321);
             this.DgvRecords.TabIndex = 0;
             // 
             // StatusStrip1
@@ -221,10 +221,10 @@ namespace StockController
             this.TSSLFunction,
             this.TSSCount,
             this.ToolStripStatusLabel3});
-            this.StatusStrip1.Location = new System.Drawing.Point(0, 16);
+            this.StatusStrip1.Location = new System.Drawing.Point(0, 20);
             this.StatusStrip1.Name = "StatusStrip1";
             this.StatusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 32, 0);
-            this.StatusStrip1.Size = new System.Drawing.Size(400, 22);
+            this.StatusStrip1.Size = new System.Drawing.Size(800, 22);
             this.StatusStrip1.TabIndex = 0;
             this.StatusStrip1.Text = "StatusStrip1";
             // 
