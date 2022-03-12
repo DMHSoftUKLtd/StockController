@@ -371,6 +371,7 @@ namespace StockController
             this.Controls.Add(this.Label1);
             this.Name = "ShopTransferForm";
             this.Text = "ShopTransferForm";
+            this.Load += new System.EventHandler(this.ShopTransferForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvRecords)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

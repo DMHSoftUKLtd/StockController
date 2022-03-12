@@ -19,7 +19,7 @@ namespace StockController
         public int TIQty;
         public void LoadNewForm()
         {
-            FrmShopTransfer shopTransfer = new FrmShopTransfer()
+            ShopTransferForm shopTransfer = new ShopTransferForm
             {
                 FormMode = "New",
                 UserID = UserID
@@ -28,7 +28,7 @@ namespace StockController
         }
         public void LoadSelectedForm()
         {
-            FrmShopTransfer shopTransfer = new FrmShopTransfer()
+            ShopTransferForm shopTransfer = new ShopTransferForm
             {
                 FormMode = "Old"
             };
@@ -293,7 +293,7 @@ namespace StockController
                             DeleteCmd.Connection.Open();
                             DeleteCmd.CommandType = CommandType.Text;
                             DeleteCmd.CommandText = "DELETE FROM tblShopTransferLines WHERE ShopTransferID = @ShopTransferID;";
-                            DeleteCmd.Parameters.AddWithValue("@ShopTransferID", ID);
+                            DeleteCmd.Parameters.AddWithValue("@ShopTransferID", ShopTransferID);
                             Result = (int)DeleteCmd.ExecuteNonQuery();
                         }
                     }

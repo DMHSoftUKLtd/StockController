@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StockController
 {
-    class Setting : Utility
+    public class Setting : Utility
     {
         public string CompanyName;
         public string VATRegistration { get; set; }

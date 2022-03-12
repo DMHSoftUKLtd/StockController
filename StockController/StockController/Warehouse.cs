@@ -35,7 +35,7 @@ namespace StockController
         public void LoadNewRecord()
         {
             // loading the new form and setting the properties of the form
-            FrmWarehouse warehouse = new FrmWarehouse
+            WarehouseForm warehouse = new WarehouseForm
             {
                 UserID = UserID,
                 FormMode = "New"
@@ -45,7 +45,7 @@ namespace StockController
         public void LoadSelectedWarehouse()
         {
             // loading a selected record into the form
-            FrmWarehouse warehouse = new FrmWarehouse
+            WarehouseForm warehouse = new WarehouseForm
             {
                 FormMode = "Old",
                 UserID = UserID

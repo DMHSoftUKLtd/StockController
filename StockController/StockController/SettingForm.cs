@@ -12,9 +12,17 @@ namespace StockController
 {
     public partial class SettingForm : Form
     {
+        public string FormMode { get; set; }
+        public int UserID { get; set; }
+        
         public SettingForm()
         {
             InitializeComponent();
+        }
+
+        private void SettingForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

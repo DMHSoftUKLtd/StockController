@@ -541,6 +541,7 @@ namespace StockController
             this.Controls.Add(this.CmdOK);
             this.Name = "SettingForm";
             this.Text = "SettingForm";
+            this.Load += new System.EventHandler(this.SettingForm_Load);
             this.GroupBox3.ResumeLayout(false);
             this.GroupBox3.PerformLayout();
             this.TabControl2.ResumeLayout(false);

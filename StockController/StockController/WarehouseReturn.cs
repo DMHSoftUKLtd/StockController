@@ -16,7 +16,7 @@ namespace StockController
         public int ReturnValue;
         public void LoadNewForm()
         {
-            FrmWarehouseReturn warehouseReturn = new FrmWarehouseReturn()
+            WarehouseReturnForm warehouseReturn = new WarehouseReturnForm
             {
                 FormMode = "New",
                 UserID = UserID
@@ -25,7 +25,7 @@ namespace StockController
         }
         public void LoadSelectedForm()
         {
-            FrmWarehouseReturn warehouseReturn = new FrmWarehouseReturn()
+            WarehouseReturnForm warehouseReturn = new WarehouseReturnForm
             {
                 FormMode = "Old"
             };

@@ -398,6 +398,7 @@ namespace StockController
             this.Controls.Add(this.tabControl1);
             this.Name = "SupplierForm";
             this.Text = "SupplierForm";
+            this.Load += new System.EventHandler(this.SupplierForm_Load);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);

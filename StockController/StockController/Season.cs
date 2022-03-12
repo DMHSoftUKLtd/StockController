@@ -68,7 +68,7 @@ namespace StockController
                 }
                 catch (SqlException ex)
                 {
-                    MessageBox.Show("Unable to Open connection to Database\nBecause : " + ex.Message.ToString(), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show("Unable to Open connection to Database\nBecause : " + ex.Message.ToString(), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                     throw;
                 }
             }
@@ -105,7 +105,7 @@ namespace StockController
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
                 throw;
             }
             if (Result != 1)
@@ -136,7 +136,7 @@ namespace StockController
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
                 DeleteFromDB = false;
                 throw;
             }

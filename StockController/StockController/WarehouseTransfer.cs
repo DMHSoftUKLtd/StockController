@@ -22,7 +22,7 @@ namespace StockController
         public int TIQty;
         public void LoadNewRecord()
         {
-            FrmWarehouseTransfer warehouseTransfer = new FrmWarehouseTransfer()
+            WarehouseTransferForm warehouseTransfer = new WarehouseTransferForm
             {
                 FormMode = "New",
                 UserID = UserID
@@ -31,7 +31,7 @@ namespace StockController
         }
         public void LoadSelectedWarehouseTransfer()
         {
-            FrmWarehouseTransfer warehouseTransfer = new FrmWarehouseTransfer()
+            WarehouseTransferForm warehouseTransfer = new WarehouseTransferForm
             {
                 FormMode = "Old"
             };

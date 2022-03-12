@@ -13,7 +13,7 @@ namespace StockController
         public int WarehouseAdjustmentID { get; set; }
         public void LoadNewWarehouseAdjustment()
         {
-            FrmWarehouseAdjustment warehouseAdjustment = new FrmWarehouseAdjustment
+            WarehouseAdjustmentForm warehouseAdjustment = new WarehouseAdjustmentForm
             {
                 FormMode = "New",
                 UserID = UserID
@@ -22,7 +22,7 @@ namespace StockController
         }
         public void LoadSelectedWarehouseAdjustment()
         {
-            FrmWarehouseAdjustment warehouseAdjustment = new FrmWarehouseAdjustment
+            WarehouseAdjustmentForm warehouseAdjustment = new WarehouseAdjustmentForm
             {
                 FormMode = "Old",
                 UserID = UserID
@@ -286,7 +286,7 @@ namespace StockController
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error in Updating Record\n" + ex.Message);
+                //MessageBox.Show("Error in Updating Record\n" + ex.Message);
                 throw;
             }
             if (Result == 1)

@@ -12,9 +12,18 @@ namespace StockController
 {
     public partial class SeasonForm : Form
     {
+        public string FormMode { get; set; }
+        public int UserID { get; set; }
+        public int SeasonID;
+      
         public SeasonForm()
         {
             InitializeComponent();
+        }
+
+        private void SeasonForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

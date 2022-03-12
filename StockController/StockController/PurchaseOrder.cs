@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace StockController
 {
-    class PurchaseOrder : Utility
+    public class PurchaseOrder : Utility
     {
+        public int PurchaseOrderID;
         public int TotalGarments;
         public int TotalHangers;
         public int TotalBoxes;

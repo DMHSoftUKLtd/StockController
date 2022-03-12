@@ -442,6 +442,7 @@ namespace StockController
             this.Controls.Add(this.Label5);
             this.Name = "ShopDeliveryForm";
             this.Text = "ShopDeliveryForm";
+            this.Load += new System.EventHandler(this.ShopDeliveryForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvRecords)).EndInit();
             this.StatusStrip1.ResumeLayout(false);
             this.StatusStrip1.PerformLayout();

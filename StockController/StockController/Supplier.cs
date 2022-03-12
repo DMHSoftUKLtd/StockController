@@ -28,7 +28,7 @@ namespace StockController
         }
         public void LoadNewRecord()
         {
-            FrmSupplier supplier = new FrmSupplier
+            SupplierForm supplier = new SupplierForm
             {
                 FormMode = "New",
                 UserID = UserID
@@ -37,7 +37,7 @@ namespace StockController
         }
         public void LoadSelectedSupplier()
         {
-            FrmSupplier supplier = new FrmSupplier
+            SupplierForm supplier = new SupplierForm
             {
                 FormMode = "Old"
             };

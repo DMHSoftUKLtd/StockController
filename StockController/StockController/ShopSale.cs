@@ -13,7 +13,7 @@ namespace StockController
         public int SalesID { get; set; }
         public void LoadNewForm()
         {
-            FrmShopSale shopSale = new FrmShopSale()
+            ShopSaleForm shopSale = new ShopSaleForm
             {
                 FormMode = "New",
                 UserID = UserID
@@ -22,7 +22,7 @@ namespace StockController
         }
         public void LoadSelectedForm()
         {
-            FrmShopSale shopSale = new FrmShopSale()
+            ShopSaleForm shopSale = new ShopSaleForm
             {
                 FormMode = "Old"
             };

@@ -522,6 +522,7 @@ namespace StockController
             this.Controls.Add(this.Label1);
             this.Name = "ShopSaleForm";
             this.Text = "ShopSaleForm";
+            this.Load += new System.EventHandler(this.ShopSaleForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvRecords)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

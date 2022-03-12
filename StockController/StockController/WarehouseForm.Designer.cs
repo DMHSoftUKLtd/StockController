@@ -542,6 +542,7 @@ namespace StockController
             this.Controls.Add(this.TabControl1);
             this.Name = "WarehouseForm";
             this.Text = "WarehouseForm";
+            this.Load += new System.EventHandler(this.WarehouseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridStock)).EndInit();
             this.TabPage3.ResumeLayout(false);
             this.TabPage3.PerformLayout();

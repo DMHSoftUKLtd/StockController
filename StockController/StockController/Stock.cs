@@ -196,7 +196,7 @@ namespace StockController
                     }
                     catch (SqlException ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        //MessageBox.Show(ex.Message);
                         throw;
                     }
                     finally
@@ -352,7 +352,7 @@ namespace StockController
             }
             catch (SqlException ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
                 throw;
             }
             return UpdateToDB;

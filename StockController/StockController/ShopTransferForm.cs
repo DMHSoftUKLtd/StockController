@@ -12,9 +12,17 @@ namespace StockController
 {
     public partial class ShopTransferForm : Form
     {
+        public string FormMode { get; set; }
+        public int UserID { get; set; }
+        private DateTime OldDate { get; set; }
         public ShopTransferForm()
         {
             InitializeComponent();
+        }
+
+        private void ShopTransferForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
