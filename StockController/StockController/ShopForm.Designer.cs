@@ -517,6 +517,7 @@ namespace StockController
             this.Controls.Add(this.CmdCancel);
             this.Name = "ShopForm";
             this.Text = "ShopForm";
+            this.Load += new System.EventHandler(this.ShopForm_Load);
             this.TabPage3.ResumeLayout(false);
             this.TabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridStocks)).EndInit();

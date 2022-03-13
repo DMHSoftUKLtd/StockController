@@ -413,6 +413,7 @@ namespace StockController
             this.Controls.Add(this.TxtStockCode);
             this.Name = "WarehouseAdjustmentForm";
             this.Text = "WarehouseAdjustmentForm";
+            this.Load += new System.EventHandler(this.WarehouseAdjustmentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

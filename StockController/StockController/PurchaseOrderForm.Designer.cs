@@ -810,6 +810,7 @@ namespace StockController
             this.Controls.Add(this.CheckBox1);
             this.Name = "PurchaseOrderForm";
             this.Text = "PurchaseOrderForm";
+            this.Load += new System.EventHandler(this.PurchaseOrderForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

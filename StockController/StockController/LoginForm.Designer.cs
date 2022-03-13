@@ -41,7 +41,7 @@ namespace StockController
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(120, 108);
+            this.label2.Location = new System.Drawing.Point(19, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 20);
             this.label2.TabIndex = 17;
@@ -51,7 +51,7 @@ namespace StockController
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(117, 90);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 20);
             this.label1.TabIndex = 16;
@@ -60,7 +60,7 @@ namespace StockController
             // TxtPassword
             // 
             this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPassword.Location = new System.Drawing.Point(169, 106);
+            this.TxtPassword.Location = new System.Drawing.Point(116, 38);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '&';
             this.TxtPassword.Size = new System.Drawing.Size(230, 26);
@@ -69,42 +69,46 @@ namespace StockController
             // TxtUserName
             // 
             this.TxtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUserName.Location = new System.Drawing.Point(169, 90);
+            this.TxtUserName.Location = new System.Drawing.Point(116, 6);
             this.TxtUserName.Name = "TxtUserName";
             this.TxtUserName.Size = new System.Drawing.Size(230, 26);
             this.TxtUserName.TabIndex = 14;
             // 
             // CmdExit
             // 
-            this.CmdExit.Location = new System.Drawing.Point(242, 122);
+            this.CmdExit.Location = new System.Drawing.Point(262, 70);
             this.CmdExit.Name = "CmdExit";
             this.CmdExit.Size = new System.Drawing.Size(84, 26);
             this.CmdExit.TabIndex = 13;
             this.CmdExit.Text = "Exit";
             this.CmdExit.UseVisualStyleBackColor = true;
+            this.CmdExit.Click += new System.EventHandler(this.CmdExit_Click);
             // 
             // CmdLogin
             // 
-            this.CmdLogin.Location = new System.Drawing.Point(197, 122);
+            this.CmdLogin.Location = new System.Drawing.Point(172, 70);
             this.CmdLogin.Name = "CmdLogin";
             this.CmdLogin.Size = new System.Drawing.Size(84, 26);
             this.CmdLogin.TabIndex = 12;
             this.CmdLogin.Text = "Login";
             this.CmdLogin.UseVisualStyleBackColor = true;
+            this.CmdLogin.Click += new System.EventHandler(this.CmdLogin_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(361, 105);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtUserName);
             this.Controls.Add(this.CmdExit);
             this.Controls.Add(this.CmdLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Text = "Login To System";
             this.ResumeLayout(false);
             this.PerformLayout();
 

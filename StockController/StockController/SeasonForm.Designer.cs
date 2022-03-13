@@ -107,6 +107,7 @@ namespace StockController
             this.Controls.Add(this.CmdOK);
             this.Name = "SeasonForm";
             this.Text = "SeasonForm";
+            this.Load += new System.EventHandler(this.SeasonForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

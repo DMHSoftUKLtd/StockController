@@ -12,9 +12,17 @@ namespace StockController
 {
     public partial class ShopAdjustmentForm : Form
     {
+        public string FormMode { get; set; }
+        public int UserID { get; set; }
+        private DateTime OldDate { get; set; }
         public ShopAdjustmentForm()
         {
             InitializeComponent();
+        }
+
+        private void ShopAdjustmentForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

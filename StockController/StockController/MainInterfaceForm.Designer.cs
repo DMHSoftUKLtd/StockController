@@ -29,28 +29,28 @@ namespace StockController
         /// </summary>
         private void InitializeComponent()
         {
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitTSMItem = new System.Windows.Forms.ToolStripMenuItem();
             this.maintanaceFunctionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.totalValuationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SettingsTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TotalValuationTSMItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shopReturnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shopSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shopTransfersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shopAdjustmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shopDeliveriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShopReturnTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShopSaleTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShopTransferTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShopAdjustmentTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShopDeliveryTSMItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shopFunctionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.warehouseReturnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.warehouseTransfersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.purchaseOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.WarehouseReturnTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.WarehouseTransferTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrchaseOrdersTSMItem = new System.Windows.Forms.ToolStripMenuItem();
             this.warehouseFunctionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.warehouseAdjustmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seasonsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.currentStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shopsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.suppliersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.warehousesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.WarehouseAdjustmentTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SeasonsTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AllStockTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CurrentStockTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShopsTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SuppliersTSMItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.WarehousesTSMItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -60,162 +60,180 @@ namespace StockController
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // exitToolStripMenuItem
+            // ExitTSMItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(45, 24);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.ExitTSMItem.Name = "ExitTSMItem";
+            this.ExitTSMItem.Size = new System.Drawing.Size(45, 24);
+            this.ExitTSMItem.Text = "Exit";
+            this.ExitTSMItem.Click += new System.EventHandler(this.ExitTSMItem_Click);
             // 
             // maintanaceFunctionsToolStripMenuItem
             // 
             this.maintanaceFunctionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.settingsToolStripMenuItem});
+            this.SettingsTSMItem});
             this.maintanaceFunctionsToolStripMenuItem.Name = "maintanaceFunctionsToolStripMenuItem";
             this.maintanaceFunctionsToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
             this.maintanaceFunctionsToolStripMenuItem.Text = "Maintanace Functions";
             // 
-            // settingsToolStripMenuItem
+            // SettingsTSMItem
             // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.settingsToolStripMenuItem.Text = "Settings";
+            this.SettingsTSMItem.Name = "SettingsTSMItem";
+            this.SettingsTSMItem.Size = new System.Drawing.Size(180, 24);
+            this.SettingsTSMItem.Text = "Settings";
+            this.SettingsTSMItem.Click += new System.EventHandler(this.SettingsTSMItem_Click);
             // 
-            // totalValuationToolStripMenuItem
+            // TotalValuationTSMItem
             // 
-            this.totalValuationToolStripMenuItem.Name = "totalValuationToolStripMenuItem";
-            this.totalValuationToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.totalValuationToolStripMenuItem.Text = "Total Valuation";
+            this.TotalValuationTSMItem.Name = "TotalValuationTSMItem";
+            this.TotalValuationTSMItem.Size = new System.Drawing.Size(180, 24);
+            this.TotalValuationTSMItem.Text = "Total Valuation";
+            this.TotalValuationTSMItem.Click += new System.EventHandler(this.TotalValuationTSMItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
             this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.totalValuationToolStripMenuItem});
+            this.TotalValuationTSMItem});
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
             this.reportsToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
-            // shopReturnsToolStripMenuItem
+            // ShopReturnTSMItem
             // 
-            this.shopReturnsToolStripMenuItem.Name = "shopReturnsToolStripMenuItem";
-            this.shopReturnsToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.shopReturnsToolStripMenuItem.Text = "Shop Returns";
+            this.ShopReturnTSMItem.Name = "ShopReturnTSMItem";
+            this.ShopReturnTSMItem.Size = new System.Drawing.Size(198, 24);
+            this.ShopReturnTSMItem.Text = "Shop Returns";
+            this.ShopReturnTSMItem.Click += new System.EventHandler(this.ShopReturnTSMItem_Click);
             // 
-            // shopSalesToolStripMenuItem
+            // ShopSaleTSMItem
             // 
-            this.shopSalesToolStripMenuItem.Name = "shopSalesToolStripMenuItem";
-            this.shopSalesToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.shopSalesToolStripMenuItem.Text = "Shop Sales";
+            this.ShopSaleTSMItem.Name = "ShopSaleTSMItem";
+            this.ShopSaleTSMItem.Size = new System.Drawing.Size(198, 24);
+            this.ShopSaleTSMItem.Text = "Shop Sales";
+            this.ShopSaleTSMItem.Click += new System.EventHandler(this.ShopSaleTSMItem_Click);
             // 
-            // shopTransfersToolStripMenuItem
+            // ShopTransferTSMItem
             // 
-            this.shopTransfersToolStripMenuItem.Name = "shopTransfersToolStripMenuItem";
-            this.shopTransfersToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.shopTransfersToolStripMenuItem.Text = "Shop Transfers";
+            this.ShopTransferTSMItem.Name = "ShopTransferTSMItem";
+            this.ShopTransferTSMItem.Size = new System.Drawing.Size(198, 24);
+            this.ShopTransferTSMItem.Text = "Shop Transfers";
+            this.ShopTransferTSMItem.Click += new System.EventHandler(this.ShopTransferTSMItem_Click);
             // 
-            // shopAdjustmentsToolStripMenuItem
+            // ShopAdjustmentTSMItem
             // 
-            this.shopAdjustmentsToolStripMenuItem.Name = "shopAdjustmentsToolStripMenuItem";
-            this.shopAdjustmentsToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.shopAdjustmentsToolStripMenuItem.Text = "Shop Adjustments";
+            this.ShopAdjustmentTSMItem.Name = "ShopAdjustmentTSMItem";
+            this.ShopAdjustmentTSMItem.Size = new System.Drawing.Size(198, 24);
+            this.ShopAdjustmentTSMItem.Text = "Shop Adjustments";
+            this.ShopAdjustmentTSMItem.Click += new System.EventHandler(this.ShopAdjustmentTSMItem_Click);
             // 
-            // shopDeliveriesToolStripMenuItem
+            // ShopDeliveryTSMItem
             // 
-            this.shopDeliveriesToolStripMenuItem.Name = "shopDeliveriesToolStripMenuItem";
-            this.shopDeliveriesToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.shopDeliveriesToolStripMenuItem.Text = "Shop Deliveries";
+            this.ShopDeliveryTSMItem.Name = "ShopDeliveryTSMItem";
+            this.ShopDeliveryTSMItem.Size = new System.Drawing.Size(198, 24);
+            this.ShopDeliveryTSMItem.Text = "Shop Deliveries";
+            this.ShopDeliveryTSMItem.Click += new System.EventHandler(this.ShopDeliveryTSMItem_Click);
             // 
             // shopFunctionsToolStripMenuItem
             // 
             this.shopFunctionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.shopDeliveriesToolStripMenuItem,
-            this.shopAdjustmentsToolStripMenuItem,
-            this.shopTransfersToolStripMenuItem,
-            this.shopSalesToolStripMenuItem,
-            this.shopReturnsToolStripMenuItem});
+            this.ShopDeliveryTSMItem,
+            this.ShopAdjustmentTSMItem,
+            this.ShopTransferTSMItem,
+            this.ShopSaleTSMItem,
+            this.ShopReturnTSMItem});
             this.shopFunctionsToolStripMenuItem.Name = "shopFunctionsToolStripMenuItem";
             this.shopFunctionsToolStripMenuItem.Size = new System.Drawing.Size(121, 24);
             this.shopFunctionsToolStripMenuItem.Text = "Shop Functions";
             // 
-            // warehouseReturnsToolStripMenuItem
+            // WarehouseReturnTSMItem
             // 
-            this.warehouseReturnsToolStripMenuItem.Name = "warehouseReturnsToolStripMenuItem";
-            this.warehouseReturnsToolStripMenuItem.Size = new System.Drawing.Size(237, 24);
-            this.warehouseReturnsToolStripMenuItem.Text = "Warehouse Returns";
+            this.WarehouseReturnTSMItem.Name = "WarehouseReturnTSMItem";
+            this.WarehouseReturnTSMItem.Size = new System.Drawing.Size(237, 24);
+            this.WarehouseReturnTSMItem.Text = "Warehouse Returns";
+            this.WarehouseReturnTSMItem.Click += new System.EventHandler(this.WarehouseReturnTSMItem_Click);
             // 
-            // warehouseTransfersToolStripMenuItem
+            // WarehouseTransferTSMItem
             // 
-            this.warehouseTransfersToolStripMenuItem.Name = "warehouseTransfersToolStripMenuItem";
-            this.warehouseTransfersToolStripMenuItem.Size = new System.Drawing.Size(237, 24);
-            this.warehouseTransfersToolStripMenuItem.Text = "Warehouse Transfers";
+            this.WarehouseTransferTSMItem.Name = "WarehouseTransferTSMItem";
+            this.WarehouseTransferTSMItem.Size = new System.Drawing.Size(237, 24);
+            this.WarehouseTransferTSMItem.Text = "Warehouse Transfers";
+            this.WarehouseTransferTSMItem.Click += new System.EventHandler(this.WarehouseTransferTSMItem_Click);
             // 
-            // purchaseOrdersToolStripMenuItem
+            // PrchaseOrdersTSMItem
             // 
-            this.purchaseOrdersToolStripMenuItem.Name = "purchaseOrdersToolStripMenuItem";
-            this.purchaseOrdersToolStripMenuItem.Size = new System.Drawing.Size(237, 24);
-            this.purchaseOrdersToolStripMenuItem.Text = "Purchase Orders";
+            this.PrchaseOrdersTSMItem.Name = "PrchaseOrdersTSMItem";
+            this.PrchaseOrdersTSMItem.Size = new System.Drawing.Size(237, 24);
+            this.PrchaseOrdersTSMItem.Text = "Purchase Orders";
+            this.PrchaseOrdersTSMItem.Click += new System.EventHandler(this.PrchaseOrdersTSMItem_Click);
             // 
             // warehouseFunctionsToolStripMenuItem
             // 
             this.warehouseFunctionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.purchaseOrdersToolStripMenuItem,
-            this.warehouseAdjustmentsToolStripMenuItem,
-            this.warehouseTransfersToolStripMenuItem,
-            this.warehouseReturnsToolStripMenuItem});
+            this.PrchaseOrdersTSMItem,
+            this.WarehouseAdjustmentTSMItem,
+            this.WarehouseTransferTSMItem,
+            this.WarehouseReturnTSMItem});
             this.warehouseFunctionsToolStripMenuItem.Name = "warehouseFunctionsToolStripMenuItem";
             this.warehouseFunctionsToolStripMenuItem.Size = new System.Drawing.Size(160, 24);
             this.warehouseFunctionsToolStripMenuItem.Text = "Warehouse Functions";
             // 
-            // warehouseAdjustmentsToolStripMenuItem
+            // WarehouseAdjustmentTSMItem
             // 
-            this.warehouseAdjustmentsToolStripMenuItem.Name = "warehouseAdjustmentsToolStripMenuItem";
-            this.warehouseAdjustmentsToolStripMenuItem.Size = new System.Drawing.Size(237, 24);
-            this.warehouseAdjustmentsToolStripMenuItem.Text = "Warehouse Adjustments";
+            this.WarehouseAdjustmentTSMItem.Name = "WarehouseAdjustmentTSMItem";
+            this.WarehouseAdjustmentTSMItem.Size = new System.Drawing.Size(237, 24);
+            this.WarehouseAdjustmentTSMItem.Text = "Warehouse Adjustments";
+            this.WarehouseAdjustmentTSMItem.Click += new System.EventHandler(this.WarehouseAdjustmentTSMItem_Click);
             // 
-            // seasonsToolStripMenuItem
+            // SeasonsTSMItem
             // 
-            this.seasonsToolStripMenuItem.Name = "seasonsToolStripMenuItem";
-            this.seasonsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.seasonsToolStripMenuItem.Text = "Seasons";
+            this.SeasonsTSMItem.Name = "SeasonsTSMItem";
+            this.SeasonsTSMItem.Size = new System.Drawing.Size(180, 24);
+            this.SeasonsTSMItem.Text = "Seasons";
+            this.SeasonsTSMItem.Click += new System.EventHandler(this.SeasonsTSMItem_Click);
             // 
-            // allStockToolStripMenuItem
+            // AllStockTSMItem
             // 
-            this.allStockToolStripMenuItem.Name = "allStockToolStripMenuItem";
-            this.allStockToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.allStockToolStripMenuItem.Text = "All Stock";
+            this.AllStockTSMItem.Name = "AllStockTSMItem";
+            this.AllStockTSMItem.Size = new System.Drawing.Size(180, 24);
+            this.AllStockTSMItem.Text = "All Stock";
+            this.AllStockTSMItem.Click += new System.EventHandler(this.AllStockTSMItem_Click);
             // 
-            // currentStockToolStripMenuItem
+            // CurrentStockTSMItem
             // 
-            this.currentStockToolStripMenuItem.Name = "currentStockToolStripMenuItem";
-            this.currentStockToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.currentStockToolStripMenuItem.Text = "Current Stock";
+            this.CurrentStockTSMItem.Name = "CurrentStockTSMItem";
+            this.CurrentStockTSMItem.Size = new System.Drawing.Size(180, 24);
+            this.CurrentStockTSMItem.Text = "Current Stock";
+            this.CurrentStockTSMItem.Click += new System.EventHandler(this.CurrentStockTSMItem_Click);
             // 
-            // shopsToolStripMenuItem
+            // ShopsTSMItem
             // 
-            this.shopsToolStripMenuItem.Name = "shopsToolStripMenuItem";
-            this.shopsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.shopsToolStripMenuItem.Text = "Shops";
+            this.ShopsTSMItem.Name = "ShopsTSMItem";
+            this.ShopsTSMItem.Size = new System.Drawing.Size(180, 24);
+            this.ShopsTSMItem.Text = "Shops";
+            this.ShopsTSMItem.Click += new System.EventHandler(this.ShopsTSMItem_Click);
             // 
-            // suppliersToolStripMenuItem
+            // SuppliersTSMItem
             // 
-            this.suppliersToolStripMenuItem.Name = "suppliersToolStripMenuItem";
-            this.suppliersToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.suppliersToolStripMenuItem.Text = "Suppliers";
+            this.SuppliersTSMItem.Name = "SuppliersTSMItem";
+            this.SuppliersTSMItem.Size = new System.Drawing.Size(180, 24);
+            this.SuppliersTSMItem.Text = "Suppliers";
+            this.SuppliersTSMItem.Click += new System.EventHandler(this.SuppliersTSMItem_Click);
             // 
-            // warehousesToolStripMenuItem
+            // WarehousesTSMItem
             // 
-            this.warehousesToolStripMenuItem.Name = "warehousesToolStripMenuItem";
-            this.warehousesToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.warehousesToolStripMenuItem.Text = "Warehouses";
+            this.WarehousesTSMItem.Name = "WarehousesTSMItem";
+            this.WarehousesTSMItem.Size = new System.Drawing.Size(180, 24);
+            this.WarehousesTSMItem.Text = "Warehouses";
+            this.WarehousesTSMItem.Click += new System.EventHandler(this.WarehousesTSMItem_Click);
             // 
             // recordsToolStripMenuItem
             // 
             this.recordsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.warehousesToolStripMenuItem,
-            this.suppliersToolStripMenuItem,
-            this.shopsToolStripMenuItem,
-            this.currentStockToolStripMenuItem,
-            this.allStockToolStripMenuItem,
-            this.seasonsToolStripMenuItem});
+            this.WarehousesTSMItem,
+            this.SuppliersTSMItem,
+            this.ShopsTSMItem,
+            this.SeasonsTSMItem,
+            this.CurrentStockTSMItem,
+            this.AllStockTSMItem});
             this.recordsToolStripMenuItem.Name = "recordsToolStripMenuItem";
             this.recordsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.recordsToolStripMenuItem.Text = "Records";
@@ -230,7 +248,7 @@ namespace StockController
             this.shopFunctionsToolStripMenuItem,
             this.reportsToolStripMenuItem,
             this.maintanaceFunctionsToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.ExitTSMItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -240,6 +258,7 @@ namespace StockController
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -248,7 +267,7 @@ namespace StockController
             // 
             this.splitContainer1.Panel1.Controls.Add(this.menuStrip1);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 47;
+            this.splitContainer1.SplitterDistance = 31;
             this.splitContainer1.TabIndex = 1;
             // 
             // MainInterfaceForm
@@ -259,6 +278,7 @@ namespace StockController
             this.Controls.Add(this.splitContainer1);
             this.Name = "MainInterfaceForm";
             this.Text = "MainInterfaceForm";
+            this.Load += new System.EventHandler(this.MainInterfaceForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -271,28 +291,28 @@ namespace StockController
 
         #endregion
 
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExitTSMItem;
         private System.Windows.Forms.ToolStripMenuItem maintanaceFunctionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem totalValuationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SettingsTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem TotalValuationTSMItem;
         private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem shopReturnsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem shopSalesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem shopTransfersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem shopAdjustmentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem shopDeliveriesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ShopReturnTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem ShopSaleTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem ShopTransferTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem ShopAdjustmentTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem ShopDeliveryTSMItem;
         private System.Windows.Forms.ToolStripMenuItem shopFunctionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem warehouseReturnsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem warehouseTransfersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem purchaseOrdersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem WarehouseReturnTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem WarehouseTransferTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem PrchaseOrdersTSMItem;
         private System.Windows.Forms.ToolStripMenuItem warehouseFunctionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem warehouseAdjustmentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem seasonsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem allStockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem currentStockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem shopsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem suppliersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem warehousesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem WarehouseAdjustmentTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem SeasonsTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem AllStockTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem CurrentStockTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem ShopsTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem SuppliersTSMItem;
+        private System.Windows.Forms.ToolStripMenuItem WarehousesTSMItem;
         private System.Windows.Forms.ToolStripMenuItem recordsToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.SplitContainer splitContainer1;

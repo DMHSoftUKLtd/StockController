@@ -69,6 +69,7 @@ namespace StockController
             this.TsbFind.Size = new System.Drawing.Size(41, 68);
             this.TsbFind.Text = "Find";
             this.TsbFind.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbFind.Click += new System.EventHandler(this.TsbFind_Click);
             // 
             // toolStrip1
             // 
@@ -87,7 +88,7 @@ namespace StockController
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(800, 71);
+            this.toolStrip1.Size = new System.Drawing.Size(800, 28);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -101,6 +102,7 @@ namespace StockController
             this.TsbNew.Size = new System.Drawing.Size(43, 55);
             this.TsbNew.Text = "New";
             this.TsbNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbNew.Click += new System.EventHandler(this.TsbNew_Click);
             // 
             // TsbRecord
             // 
@@ -110,6 +112,7 @@ namespace StockController
             this.TsbRecord.Size = new System.Drawing.Size(61, 68);
             this.TsbRecord.Text = "Record";
             this.TsbRecord.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbRecord.Click += new System.EventHandler(this.TsbRecord_Click);
             // 
             // TsbDelete
             // 
@@ -119,6 +122,7 @@ namespace StockController
             this.TsbDelete.Size = new System.Drawing.Size(56, 68);
             this.TsbDelete.Text = "Delete";
             this.TsbDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbDelete.Click += new System.EventHandler(this.TsbDelete_Click);
             // 
             // TsbRefresh
             // 
@@ -128,6 +132,7 @@ namespace StockController
             this.TsbRefresh.Size = new System.Drawing.Size(63, 68);
             this.TsbRefresh.Text = "Refresh";
             this.TsbRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbRefresh.Click += new System.EventHandler(this.TsbRefresh_Click);
             // 
             // TsbPrint
             // 
@@ -138,6 +143,7 @@ namespace StockController
             this.TsbPrint.Text = "Print";
             this.TsbPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.TsbPrint.Visible = false;
+            this.TsbPrint.Click += new System.EventHandler(this.TsbPrint_Click);
             // 
             // TSBBalances
             // 
@@ -148,6 +154,7 @@ namespace StockController
             this.TSBBalances.Text = "Balances";
             this.TSBBalances.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.TSBBalances.Visible = false;
+            this.TSBBalances.Click += new System.EventHandler(this.TSBBalances_Click);
             // 
             // TsbClose
             // 
@@ -157,13 +164,14 @@ namespace StockController
             this.TsbClose.Size = new System.Drawing.Size(49, 68);
             this.TsbClose.Text = "Close";
             this.TsbClose.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.TsbClose.Click += new System.EventHandler(this.TsbClose_Click);
             // 
             // SplitContainer1
             // 
             this.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SplitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.SplitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.SplitContainer1.Margin = new System.Windows.Forms.Padding(6);
+            this.SplitContainer1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.SplitContainer1.Name = "SplitContainer1";
             this.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -175,7 +183,7 @@ namespace StockController
             // 
             this.SplitContainer1.Panel2.Controls.Add(this.SplitContainer2);
             this.SplitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.SplitContainer1.SplitterDistance = 71;
+            this.SplitContainer1.SplitterDistance = 31;
             this.SplitContainer1.SplitterWidth = 8;
             this.SplitContainer1.TabIndex = 3;
             // 
@@ -184,7 +192,7 @@ namespace StockController
             this.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SplitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.SplitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.SplitContainer2.Margin = new System.Windows.Forms.Padding(6);
+            this.SplitContainer2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.SplitContainer2.Name = "SplitContainer2";
             this.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -195,8 +203,8 @@ namespace StockController
             // SplitContainer2.Panel2
             // 
             this.SplitContainer2.Panel2.Controls.Add(this.StatusStrip1);
-            this.SplitContainer2.Size = new System.Drawing.Size(800, 371);
-            this.SplitContainer2.SplitterDistance = 321;
+            this.SplitContainer2.Size = new System.Drawing.Size(800, 411);
+            this.SplitContainer2.SplitterDistance = 376;
             this.SplitContainer2.SplitterWidth = 8;
             this.SplitContainer2.TabIndex = 0;
             // 
@@ -207,12 +215,13 @@ namespace StockController
             this.DgvRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvRecords.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvRecords.Location = new System.Drawing.Point(0, 0);
-            this.DgvRecords.Margin = new System.Windows.Forms.Padding(6);
+            this.DgvRecords.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.DgvRecords.Name = "DgvRecords";
             this.DgvRecords.ReadOnly = true;
             this.DgvRecords.RowHeadersWidth = 51;
-            this.DgvRecords.Size = new System.Drawing.Size(800, 321);
+            this.DgvRecords.Size = new System.Drawing.Size(800, 376);
             this.DgvRecords.TabIndex = 0;
+            this.DgvRecords.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvRecords_CellContentDoubleClick);
             // 
             // StatusStrip1
             // 
@@ -221,7 +230,7 @@ namespace StockController
             this.TSSLFunction,
             this.TSSCount,
             this.ToolStripStatusLabel3});
-            this.StatusStrip1.Location = new System.Drawing.Point(0, 20);
+            this.StatusStrip1.Location = new System.Drawing.Point(0, 5);
             this.StatusStrip1.Name = "StatusStrip1";
             this.StatusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 32, 0);
             this.StatusStrip1.Size = new System.Drawing.Size(800, 22);
@@ -254,6 +263,7 @@ namespace StockController
             this.Controls.Add(this.SplitContainer1);
             this.Name = "DataGridForm";
             this.Text = "DataGridForm";
+            this.Load += new System.EventHandler(this.DataGridForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BindingSource1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

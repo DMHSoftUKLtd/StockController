@@ -12,9 +12,17 @@ namespace StockController
 {
     public partial class ShopReturnForm : Form
     {
+        public string FormMode { get; set; }
+        public int UserID { get; set; }
+        private DateTime OldDate { get; set; }
         public ShopReturnForm()
         {
             InitializeComponent();
+        }
+
+        private void ShopReturnForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

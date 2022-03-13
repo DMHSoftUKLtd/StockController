@@ -12,9 +12,17 @@ namespace StockController
 {
     public partial class SupplierForm : Form
     {
+        public string FormMode { get; set; }
+        public int UserID { get; set; }
+        
         public SupplierForm()
         {
             InitializeComponent();
+        }
+
+        private void SupplierForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

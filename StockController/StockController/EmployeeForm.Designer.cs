@@ -48,63 +48,65 @@ namespace StockController
             // 
             // CmdCancel
             // 
-            this.CmdCancel.Location = new System.Drawing.Point(316, 288);
+            this.CmdCancel.Location = new System.Drawing.Point(137, 278);
             this.CmdCancel.Name = "CmdCancel";
             this.CmdCancel.Size = new System.Drawing.Size(84, 26);
             this.CmdCancel.TabIndex = 37;
             this.CmdCancel.Text = "Cancel";
             this.CmdCancel.UseVisualStyleBackColor = true;
+            this.CmdCancel.Click += new System.EventHandler(this.CmdCancel_Click);
             // 
             // CmdOK
             // 
-            this.CmdOK.Location = new System.Drawing.Point(193, 307);
+            this.CmdOK.Location = new System.Drawing.Point(36, 278);
             this.CmdOK.Name = "CmdOK";
             this.CmdOK.Size = new System.Drawing.Size(84, 26);
             this.CmdOK.TabIndex = 36;
             this.CmdOK.Text = "Save";
             this.CmdOK.UseVisualStyleBackColor = true;
+            this.CmdOK.Click += new System.EventHandler(this.CmdOK_Click);
             // 
             // richTextBox1
             // 
             this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(165, 174);
+            this.richTextBox1.Location = new System.Drawing.Point(36, 164);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(235, 108);
+            this.richTextBox1.Size = new System.Drawing.Size(176, 108);
             this.richTextBox1.TabIndex = 38;
             this.richTextBox1.Text = "ProfileID | Description\n---------------------------------------------\n1\t| Standar" +
     "d Users\n2\t| System Administrator\n3\t| System Manager";
             // 
             // TxtEmployeeID
             // 
-            this.TxtEmployeeID.Location = new System.Drawing.Point(165, 22);
+            this.TxtEmployeeID.Location = new System.Drawing.Point(76, 12);
             this.TxtEmployeeID.Name = "TxtEmployeeID";
             this.TxtEmployeeID.Size = new System.Drawing.Size(112, 20);
             this.TxtEmployeeID.TabIndex = 30;
             // 
             // TxtFirstName
             // 
-            this.TxtFirstName.Location = new System.Drawing.Point(165, 48);
+            this.TxtFirstName.Location = new System.Drawing.Point(76, 38);
             this.TxtFirstName.Name = "TxtFirstName";
             this.TxtFirstName.Size = new System.Drawing.Size(112, 20);
             this.TxtFirstName.TabIndex = 31;
             // 
             // TxtLastName
             // 
-            this.TxtLastName.Location = new System.Drawing.Point(165, 74);
+            this.TxtLastName.Location = new System.Drawing.Point(76, 64);
             this.TxtLastName.Name = "TxtLastName";
             this.TxtLastName.Size = new System.Drawing.Size(112, 20);
             this.TxtLastName.TabIndex = 32;
             // 
             // TxtLoginCode
             // 
-            this.TxtLoginCode.Location = new System.Drawing.Point(165, 97);
+            this.TxtLoginCode.Location = new System.Drawing.Point(76, 87);
             this.TxtLoginCode.Name = "TxtLoginCode";
             this.TxtLoginCode.Size = new System.Drawing.Size(112, 20);
             this.TxtLoginCode.TabIndex = 33;
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Location = new System.Drawing.Point(165, 121);
+            this.TxtPassword.Location = new System.Drawing.Point(76, 111);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.PasswordChar = '%';
             this.TxtPassword.Size = new System.Drawing.Size(112, 20);
@@ -117,7 +119,7 @@ namespace StockController
             "Standard Uers",
             "System Administrator",
             "System Manager"});
-            this.CboProfiles.Location = new System.Drawing.Point(165, 147);
+            this.CboProfiles.Location = new System.Drawing.Point(76, 137);
             this.CboProfiles.Name = "CboProfiles";
             this.CboProfiles.Size = new System.Drawing.Size(136, 21);
             this.CboProfiles.TabIndex = 35;
@@ -125,7 +127,7 @@ namespace StockController
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(57, 328);
+            this.label6.Location = new System.Drawing.Point(31, 140);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 13);
             this.label6.TabIndex = 39;
@@ -134,7 +136,7 @@ namespace StockController
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 308);
+            this.label5.Location = new System.Drawing.Point(14, 114);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 40;
@@ -143,7 +145,7 @@ namespace StockController
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(61, 295);
+            this.label4.Location = new System.Drawing.Point(6, 90);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 41;
@@ -152,7 +154,7 @@ namespace StockController
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(63, 279);
+            this.label3.Location = new System.Drawing.Point(9, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 42;
@@ -161,7 +163,7 @@ namespace StockController
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 264);
+            this.label2.Location = new System.Drawing.Point(10, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 43;
@@ -170,7 +172,7 @@ namespace StockController
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 249);
+            this.label1.Location = new System.Drawing.Point(0, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 44;
@@ -180,7 +182,7 @@ namespace StockController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(231, 311);
             this.Controls.Add(this.CmdCancel);
             this.Controls.Add(this.CmdOK);
             this.Controls.Add(this.richTextBox1);
@@ -198,6 +200,7 @@ namespace StockController
             this.Controls.Add(this.label1);
             this.Name = "EmployeeForm";
             this.Text = "EmployeeForm";
+            this.Load += new System.EventHandler(this.EmployeeForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

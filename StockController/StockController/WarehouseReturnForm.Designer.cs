@@ -436,6 +436,7 @@ namespace StockController
             this.Controls.Add(this.GroupBox2);
             this.Name = "WarehouseReturnForm";
             this.Text = "WarehouseReturnForm";
+            this.Load += new System.EventHandler(this.WarehouseReturnForm_Load);
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
             this.GroupBox2.ResumeLayout(false);

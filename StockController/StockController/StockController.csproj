@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,12 +53,14 @@
     <Compile Include="DataGridForm.Designer.cs">
       <DependentUpon>DataGridForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee.cs" />
     <Compile Include="EmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Log.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,35 +75,111 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrder.cs" />
     <Compile Include="PurchaseOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PurchaseOrderForm.Designer.cs">
       <DependentUpon>PurchaseOrderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Season.cs" />
     <Compile Include="SeasonForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SeasonForm.Designer.cs">
       <DependentUpon>SeasonForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Setting.cs" />
     <Compile Include="SettingForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SettingForm.Designer.cs">
       <DependentUpon>SettingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shop.cs" />
+    <Compile Include="ShopAdjustment.cs" />
     <Compile Include="ShopAdjustmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ShopAdjustmentForm.Designer.cs">
       <DependentUpon>ShopAdjustmentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShopDelivery.cs" />
+    <Compile Include="ShopDeliveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopDeliveryForm.Designer.cs">
+      <DependentUpon>ShopDeliveryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShopForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ShopForm.Designer.cs">
       <DependentUpon>ShopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopReturn.cs" />
+    <Compile Include="ShopReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopReturnForm.Designer.cs">
+      <DependentUpon>ShopReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopSale.cs" />
+    <Compile Include="ShopSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopSaleForm.Designer.cs">
+      <DependentUpon>ShopSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopTransfer.cs" />
+    <Compile Include="ShopTransferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopTransferForm.Designer.cs">
+      <DependentUpon>ShopTransferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs" />
+    <Compile Include="StockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm.Designer.cs">
+      <DependentUpon>StockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierForm.Designer.cs">
+      <DependentUpon>SupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="Warehouse.cs" />
+    <Compile Include="WarehouseAdjustment.cs" />
+    <Compile Include="WarehouseAdjustmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseAdjustmentForm.Designer.cs">
+      <DependentUpon>WarehouseAdjustmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseForm.Designer.cs">
+      <DependentUpon>WarehouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseReturn.cs" />
+    <Compile Include="WarehouseReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseReturnForm.Designer.cs">
+      <DependentUpon>WarehouseReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseTransfer.cs" />
+    <Compile Include="WarehouseTransferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WarehouseTransferForm.Designer.cs">
+      <DependentUpon>WarehouseTransferForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="DataGridForm.resx">
       <DependentUpon>DataGridForm.cs</DependentUpon>
@@ -135,8 +214,38 @@
     <EmbeddedResource Include="ShopAdjustmentForm.resx">
       <DependentUpon>ShopAdjustmentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShopDeliveryForm.resx">
+      <DependentUpon>ShopDeliveryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShopForm.resx">
       <DependentUpon>ShopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopReturnForm.resx">
+      <DependentUpon>ShopReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopSaleForm.resx">
+      <DependentUpon>ShopSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopTransferForm.resx">
+      <DependentUpon>ShopTransferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm.resx">
+      <DependentUpon>StockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierForm.resx">
+      <DependentUpon>SupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseAdjustmentForm.resx">
+      <DependentUpon>WarehouseAdjustmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseForm.resx">
+      <DependentUpon>WarehouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseReturnForm.resx">
+      <DependentUpon>WarehouseReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseTransferForm.resx">
+      <DependentUpon>WarehouseTransferForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
