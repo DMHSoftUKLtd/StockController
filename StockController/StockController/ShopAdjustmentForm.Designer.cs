@@ -68,17 +68,17 @@ namespace StockController
             // 
             // TxtSID
             // 
-            this.TxtSID.Location = new System.Drawing.Point(469, 41);
+            this.TxtSID.Location = new System.Drawing.Point(638, 15);
             this.TxtSID.Margin = new System.Windows.Forms.Padding(6);
             this.TxtSID.Name = "TxtSID";
-            this.TxtSID.Size = new System.Drawing.Size(216, 20);
+            this.TxtSID.Size = new System.Drawing.Size(90, 20);
             this.TxtSID.TabIndex = 83;
             // 
             // Label11
             // 
             this.Label11.AutoSize = true;
             this.Label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label11.Location = new System.Drawing.Point(325, 43);
+            this.Label11.Location = new System.Drawing.Point(488, 17);
             this.Label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(138, 18);
@@ -89,7 +89,7 @@ namespace StockController
             // 
             this.Label9.AutoSize = true;
             this.Label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label9.Location = new System.Drawing.Point(147, 419);
+            this.Label9.Location = new System.Drawing.Point(653, 201);
             this.Label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(76, 18);
@@ -100,7 +100,7 @@ namespace StockController
             // 
             this.Label6.AutoSize = true;
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(241, 419);
+            this.Label6.Location = new System.Drawing.Point(653, 251);
             this.Label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(78, 18);
@@ -110,19 +110,19 @@ namespace StockController
             // txtTotalLoss
             // 
             this.txtTotalLoss.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalLoss.Location = new System.Drawing.Point(246, 442);
+            this.txtTotalLoss.Location = new System.Drawing.Point(656, 275);
             this.txtTotalLoss.Margin = new System.Windows.Forms.Padding(6);
             this.txtTotalLoss.Name = "txtTotalLoss";
-            this.txtTotalLoss.Size = new System.Drawing.Size(104, 24);
+            this.txtTotalLoss.Size = new System.Drawing.Size(91, 24);
             this.txtTotalLoss.TabIndex = 74;
             // 
             // txtTotalGain
             // 
             this.txtTotalGain.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotalGain.Location = new System.Drawing.Point(151, 442);
+            this.txtTotalGain.Location = new System.Drawing.Point(656, 221);
             this.txtTotalGain.Margin = new System.Windows.Forms.Padding(6);
             this.txtTotalGain.Name = "txtTotalGain";
-            this.txtTotalGain.Size = new System.Drawing.Size(126, 24);
+            this.txtTotalGain.Size = new System.Drawing.Size(91, 24);
             this.txtTotalGain.TabIndex = 72;
             // 
             // dgvItems
@@ -136,11 +136,11 @@ namespace StockController
             this.TransFromQty,
             this.TransToQty,
             this.UnitPrices});
-            this.dgvItems.Location = new System.Drawing.Point(116, 463);
+            this.dgvItems.Location = new System.Drawing.Point(15, 201);
             this.dgvItems.Margin = new System.Windows.Forms.Padding(6);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.RowHeadersWidth = 51;
-            this.dgvItems.Size = new System.Drawing.Size(1066, 369);
+            this.dgvItems.Size = new System.Drawing.Size(626, 228);
             this.dgvItems.TabIndex = 75;
             // 
             // stockCodeCol
@@ -178,10 +178,10 @@ namespace StockController
             // CmdDeleteFromGrid
             // 
             this.CmdDeleteFromGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdDeleteFromGrid.Location = new System.Drawing.Point(538, 184);
+            this.CmdDeleteFromGrid.Location = new System.Drawing.Point(656, 134);
             this.CmdDeleteFromGrid.Margin = new System.Windows.Forms.Padding(6);
             this.CmdDeleteFromGrid.Name = "CmdDeleteFromGrid";
-            this.CmdDeleteFromGrid.Size = new System.Drawing.Size(56, 63);
+            this.CmdDeleteFromGrid.Size = new System.Drawing.Size(50, 55);
             this.CmdDeleteFromGrid.TabIndex = 63;
             this.CmdDeleteFromGrid.Text = "-";
             this.CmdDeleteFromGrid.UseVisualStyleBackColor = true;
@@ -198,16 +198,16 @@ namespace StockController
             this.cboType.Items.AddRange(new object[] {
             "Loss",
             "Gain"});
-            this.cboType.Location = new System.Drawing.Point(267, 191);
+            this.cboType.Location = new System.Drawing.Point(318, 163);
             this.cboType.Margin = new System.Windows.Forms.Padding(6);
             this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(264, 26);
+            this.cboType.Size = new System.Drawing.Size(136, 26);
             this.cboType.TabIndex = 60;
             // 
             // txtAdjustHangers
             // 
             this.txtAdjustHangers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdjustHangers.Location = new System.Drawing.Point(419, 193);
+            this.txtAdjustHangers.Location = new System.Drawing.Point(466, 163);
             this.txtAdjustHangers.Margin = new System.Windows.Forms.Padding(6);
             this.txtAdjustHangers.Name = "txtAdjustHangers";
             this.txtAdjustHangers.Size = new System.Drawing.Size(116, 24);
@@ -217,7 +217,7 @@ namespace StockController
             // 
             this.Label8.AutoSize = true;
             this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label8.Location = new System.Drawing.Point(406, 163);
+            this.Label8.Location = new System.Drawing.Point(463, 134);
             this.Label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(112, 18);
@@ -227,10 +227,10 @@ namespace StockController
             // CmdAddToGrid
             // 
             this.CmdAddToGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdAddToGrid.Location = new System.Drawing.Point(503, 183);
+            this.CmdAddToGrid.Location = new System.Drawing.Point(594, 134);
             this.CmdAddToGrid.Margin = new System.Windows.Forms.Padding(6);
             this.CmdAddToGrid.Name = "CmdAddToGrid";
-            this.CmdAddToGrid.Size = new System.Drawing.Size(56, 65);
+            this.CmdAddToGrid.Size = new System.Drawing.Size(50, 55);
             this.CmdAddToGrid.TabIndex = 62;
             this.CmdAddToGrid.Text = "+";
             this.CmdAddToGrid.UseVisualStyleBackColor = true;
@@ -239,7 +239,7 @@ namespace StockController
             // 
             this.Label7.AutoSize = true;
             this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label7.Location = new System.Drawing.Point(263, 163);
+            this.Label7.Location = new System.Drawing.Point(316, 134);
             this.Label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(121, 18);
@@ -250,7 +250,7 @@ namespace StockController
             // 
             this.Label5.AutoSize = true;
             this.Label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label5.Location = new System.Drawing.Point(58, 130);
+            this.Label5.Location = new System.Drawing.Point(279, 51);
             this.Label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(91, 18);
@@ -261,7 +261,7 @@ namespace StockController
             // 
             this.txtShopName.Enabled = false;
             this.txtShopName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShopName.Location = new System.Drawing.Point(155, 128);
+            this.txtShopName.Location = new System.Drawing.Point(382, 47);
             this.txtShopName.Margin = new System.Windows.Forms.Padding(6);
             this.txtShopName.Name = "txtShopName";
             this.txtShopName.Size = new System.Drawing.Size(272, 24);
@@ -270,7 +270,7 @@ namespace StockController
             // DtpDate
             // 
             this.DtpDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpDate.Location = new System.Drawing.Point(155, 41);
+            this.DtpDate.Location = new System.Drawing.Point(155, 12);
             this.DtpDate.Margin = new System.Windows.Forms.Padding(6);
             this.DtpDate.Name = "DtpDate";
             this.DtpDate.Size = new System.Drawing.Size(324, 24);
@@ -281,7 +281,7 @@ namespace StockController
             // 
             this.Label10.AutoSize = true;
             this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label10.Location = new System.Drawing.Point(24, 49);
+            this.Label10.Location = new System.Drawing.Point(15, 14);
             this.Label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(125, 18);
@@ -291,10 +291,10 @@ namespace StockController
             // CmdOK
             // 
             this.CmdOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.CmdOK.Location = new System.Drawing.Point(1102, 334);
+            this.CmdOK.Location = new System.Drawing.Point(653, 302);
             this.CmdOK.Margin = new System.Windows.Forms.Padding(6);
             this.CmdOK.Name = "CmdOK";
-            this.CmdOK.Size = new System.Drawing.Size(130, 63);
+            this.CmdOK.Size = new System.Drawing.Size(75, 34);
             this.CmdOK.TabIndex = 64;
             this.CmdOK.Text = "Add";
             this.CmdOK.UseVisualStyleBackColor = true;
@@ -302,19 +302,19 @@ namespace StockController
             // txtCurrentHangers
             // 
             this.txtCurrentHangers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentHangers.Location = new System.Drawing.Point(163, 193);
+            this.txtCurrentHangers.Location = new System.Drawing.Point(219, 163);
             this.txtCurrentHangers.Margin = new System.Windows.Forms.Padding(6);
             this.txtCurrentHangers.Name = "txtCurrentHangers";
-            this.txtCurrentHangers.Size = new System.Drawing.Size(194, 24);
+            this.txtCurrentHangers.Size = new System.Drawing.Size(87, 24);
             this.txtCurrentHangers.TabIndex = 67;
             // 
             // CmdCancel
             // 
             this.CmdCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.CmdCancel.Location = new System.Drawing.Point(962, 193);
+            this.CmdCancel.Location = new System.Drawing.Point(653, 348);
             this.CmdCancel.Margin = new System.Windows.Forms.Padding(6);
             this.CmdCancel.Name = "CmdCancel";
-            this.CmdCancel.Size = new System.Drawing.Size(176, 63);
+            this.CmdCancel.Size = new System.Drawing.Size(75, 38);
             this.CmdCancel.TabIndex = 66;
             this.CmdCancel.Text = "Cancel";
             this.CmdCancel.UseVisualStyleBackColor = true;
@@ -322,10 +322,10 @@ namespace StockController
             // CmdClear
             // 
             this.CmdClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.CmdClear.Location = new System.Drawing.Point(1081, 259);
+            this.CmdClear.Location = new System.Drawing.Point(653, 398);
             this.CmdClear.Margin = new System.Windows.Forms.Padding(6);
             this.CmdClear.Name = "CmdClear";
-            this.CmdClear.Size = new System.Drawing.Size(130, 63);
+            this.CmdClear.Size = new System.Drawing.Size(75, 31);
             this.CmdClear.TabIndex = 65;
             this.CmdClear.Text = "Clear";
             this.CmdClear.UseVisualStyleBackColor = true;
@@ -333,7 +333,7 @@ namespace StockController
             // txtShopRef
             // 
             this.txtShopRef.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShopRef.Location = new System.Drawing.Point(155, 101);
+            this.txtShopRef.Location = new System.Drawing.Point(155, 48);
             this.txtShopRef.Margin = new System.Windows.Forms.Padding(6);
             this.txtShopRef.MaxLength = 8;
             this.txtShopRef.Name = "txtShopRef";
@@ -343,7 +343,7 @@ namespace StockController
             // txtReference
             // 
             this.txtReference.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReference.Location = new System.Drawing.Point(155, 71);
+            this.txtReference.Location = new System.Drawing.Point(155, 84);
             this.txtReference.Margin = new System.Windows.Forms.Padding(6);
             this.txtReference.MaxLength = 50;
             this.txtReference.Name = "txtReference";
@@ -354,7 +354,7 @@ namespace StockController
             // 
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label1.Location = new System.Drawing.Point(69, 76);
+            this.Label1.Location = new System.Drawing.Point(60, 84);
             this.Label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(80, 18);
@@ -365,7 +365,7 @@ namespace StockController
             // 
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label2.Location = new System.Drawing.Point(75, 103);
+            this.Label2.Location = new System.Drawing.Point(66, 51);
             this.Label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(74, 18);
@@ -376,7 +376,7 @@ namespace StockController
             // 
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label4.Location = new System.Drawing.Point(159, 163);
+            this.Label4.Location = new System.Drawing.Point(216, 134);
             this.Label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(88, 18);
@@ -387,7 +387,7 @@ namespace StockController
             // 
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label3.Location = new System.Drawing.Point(58, 163);
+            this.Label3.Location = new System.Drawing.Point(15, 134);
             this.Label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(91, 18);
@@ -397,7 +397,7 @@ namespace StockController
             // txtStockCode
             // 
             this.txtStockCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStockCode.Location = new System.Drawing.Point(60, 193);
+            this.txtStockCode.Location = new System.Drawing.Point(15, 163);
             this.txtStockCode.Margin = new System.Windows.Forms.Padding(6);
             this.txtStockCode.MaxLength = 30;
             this.txtStockCode.Name = "txtStockCode";
@@ -408,7 +408,7 @@ namespace StockController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1563, 832);
+            this.ClientSize = new System.Drawing.Size(759, 442);
             this.Controls.Add(this.TxtSID);
             this.Controls.Add(this.Label11);
             this.Controls.Add(this.Label9);

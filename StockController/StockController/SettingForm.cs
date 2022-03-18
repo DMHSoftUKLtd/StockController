@@ -182,7 +182,7 @@ namespace StockController
         {
             using (SqlConnection conn = new SqlConnection())
             {
-                conn.ConnectionString = Utils.GetConnString(1);
+                conn.ConnectionString = Utility.GetConnString(1);
                 conn.Open();
                 DataSet SettingData = new DataSet();
                 SqlDataAdapter SettingsDataAdapter = new SqlDataAdapter("SELECT * from tblCompanyDetails", conn);
@@ -213,7 +213,7 @@ namespace StockController
             using (SqlConnection conn = new SqlConnection())
             {
                 // attach the loading function to the connection string of the server
-                conn.ConnectionString = Utils.GetConnString(3);
+                conn.ConnectionString = Utility.GetConnString(3);
                 using (SqlCommand DBNameCmd = new SqlCommand())
                 {
                     DBNameCmd.CommandText = "Select name from sys.databases";

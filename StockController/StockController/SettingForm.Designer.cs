@@ -50,8 +50,8 @@ namespace StockController
             this.Label7 = new System.Windows.Forms.Label();
             this.BackupRestoreTC = new System.Windows.Forms.TabControl();
             this.TabPage3 = new System.Windows.Forms.TabPage();
-            this.lblBackupinfo = new System.Windows.Forms.Label();
             this.GroupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblBackupinfo = new System.Windows.Forms.Label();
             this.Label11 = new System.Windows.Forms.Label();
             this.CmdBackup = new System.Windows.Forms.Button();
             this.ComboBox1 = new System.Windows.Forms.ComboBox();
@@ -84,10 +84,10 @@ namespace StockController
             // 
             // CmdRestore
             // 
-            this.CmdRestore.Location = new System.Drawing.Point(27, 153);
-            this.CmdRestore.Margin = new System.Windows.Forms.Padding(12);
+            this.CmdRestore.Location = new System.Drawing.Point(12, 153);
+            this.CmdRestore.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.CmdRestore.Name = "CmdRestore";
-            this.CmdRestore.Size = new System.Drawing.Size(446, 57);
+            this.CmdRestore.Size = new System.Drawing.Size(319, 57);
             this.CmdRestore.TabIndex = 2;
             this.CmdRestore.Text = "Restore Backup";
             this.CmdRestore.UseVisualStyleBackColor = true;
@@ -96,35 +96,35 @@ namespace StockController
             // ComboBox2
             // 
             this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(27, 50);
-            this.ComboBox2.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBox2.Location = new System.Drawing.Point(12, 50);
+            this.ComboBox2.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(446, 21);
+            this.ComboBox2.Size = new System.Drawing.Size(319, 21);
             this.ComboBox2.TabIndex = 0;
             // 
             // txtCompanyName
             // 
-            this.txtCompanyName.Location = new System.Drawing.Point(117, 18);
-            this.txtCompanyName.Margin = new System.Windows.Forms.Padding(12);
+            this.txtCompanyName.Location = new System.Drawing.Point(117, 22);
+            this.txtCompanyName.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtCompanyName.MaxLength = 60;
             this.txtCompanyName.Name = "txtCompanyName";
-            this.txtCompanyName.Size = new System.Drawing.Size(672, 20);
+            this.txtCompanyName.Size = new System.Drawing.Size(268, 20);
             this.txtCompanyName.TabIndex = 0;
             this.txtCompanyName.Leave += new System.EventHandler(this.txtCompanyName_Leave);
             // 
             // txtVATRate
             // 
-            this.txtVATRate.Location = new System.Drawing.Point(117, 343);
-            this.txtVATRate.Margin = new System.Windows.Forms.Padding(12);
+            this.txtVATRate.Location = new System.Drawing.Point(117, 312);
+            this.txtVATRate.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtVATRate.Name = "txtVATRate";
-            this.txtVATRate.Size = new System.Drawing.Size(244, 20);
+            this.txtVATRate.Size = new System.Drawing.Size(106, 20);
             this.txtVATRate.TabIndex = 10;
             this.txtVATRate.Leave += new System.EventHandler(this.txtVATRate_Leave);
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(8, 25);
+            this.Label1.Location = new System.Drawing.Point(24, 25);
             this.Label1.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(85, 13);
@@ -133,17 +133,17 @@ namespace StockController
             // 
             // txtVATReg
             // 
-            this.txtVATReg.Location = new System.Drawing.Point(117, 371);
-            this.txtVATReg.Margin = new System.Windows.Forms.Padding(12);
+            this.txtVATReg.Location = new System.Drawing.Point(117, 340);
+            this.txtVATReg.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtVATReg.Name = "txtVATReg";
-            this.txtVATReg.Size = new System.Drawing.Size(672, 20);
+            this.txtVATReg.Size = new System.Drawing.Size(268, 20);
             this.txtVATReg.TabIndex = 11;
             this.txtVATReg.Leave += new System.EventHandler(this.txtVATReg_Leave);
             // 
             // Label20
             // 
             this.Label20.AutoSize = true;
-            this.Label20.Location = new System.Drawing.Point(45, 53);
+            this.Label20.Location = new System.Drawing.Point(61, 53);
             this.Label20.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label20.Name = "Label20";
             this.Label20.Size = new System.Drawing.Size(48, 13);
@@ -153,7 +153,7 @@ namespace StockController
             // Label10
             // 
             this.Label10.AutoSize = true;
-            this.Label10.Location = new System.Drawing.Point(22, 374);
+            this.Label10.Location = new System.Drawing.Point(38, 343);
             this.Label10.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(71, 13);
@@ -163,7 +163,7 @@ namespace StockController
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(34, 195);
+            this.Label3.Location = new System.Drawing.Point(50, 164);
             this.Label3.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(59, 13);
@@ -197,11 +197,11 @@ namespace StockController
             this.GroupBox3.Controls.Add(this.CmdRestore);
             this.GroupBox3.Controls.Add(this.ComboBox3);
             this.GroupBox3.Controls.Add(this.ComboBox2);
-            this.GroupBox3.Location = new System.Drawing.Point(28, 21);
-            this.GroupBox3.Margin = new System.Windows.Forms.Padding(12);
+            this.GroupBox3.Location = new System.Drawing.Point(12, 12);
+            this.GroupBox3.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.GroupBox3.Name = "GroupBox3";
-            this.GroupBox3.Padding = new System.Windows.Forms.Padding(12);
-            this.GroupBox3.Size = new System.Drawing.Size(490, 242);
+            this.GroupBox3.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.GroupBox3.Size = new System.Drawing.Size(345, 242);
             this.GroupBox3.TabIndex = 0;
             this.GroupBox3.TabStop = false;
             this.GroupBox3.Text = "Restore Database";
@@ -209,16 +209,16 @@ namespace StockController
             // ComboBox3
             // 
             this.ComboBox3.FormattingEnabled = true;
-            this.ComboBox3.Location = new System.Drawing.Point(27, 108);
-            this.ComboBox3.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBox3.Location = new System.Drawing.Point(12, 108);
+            this.ComboBox3.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.ComboBox3.Name = "ComboBox3";
-            this.ComboBox3.Size = new System.Drawing.Size(446, 21);
+            this.ComboBox3.Size = new System.Drawing.Size(319, 21);
             this.ComboBox3.TabIndex = 1;
             // 
             // Label40
             // 
             this.Label40.AutoSize = true;
-            this.Label40.Location = new System.Drawing.Point(32, 224);
+            this.Label40.Location = new System.Drawing.Point(48, 193);
             this.Label40.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label40.Name = "Label40";
             this.Label40.Size = new System.Drawing.Size(61, 13);
@@ -228,7 +228,7 @@ namespace StockController
             // Label5
             // 
             this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(66, 253);
+            this.Label5.Location = new System.Drawing.Point(82, 222);
             this.Label5.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(27, 13);
@@ -238,7 +238,7 @@ namespace StockController
             // Label6
             // 
             this.Label6.AutoSize = true;
-            this.Label6.Location = new System.Drawing.Point(44, 290);
+            this.Label6.Location = new System.Drawing.Point(60, 259);
             this.Label6.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(49, 13);
@@ -248,7 +248,7 @@ namespace StockController
             // Label8
             // 
             this.Label8.AutoSize = true;
-            this.Label8.Location = new System.Drawing.Point(4, 343);
+            this.Label8.Location = new System.Drawing.Point(20, 312);
             this.Label8.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(89, 13);
@@ -268,7 +268,7 @@ namespace StockController
             // Label7
             // 
             this.Label7.AutoSize = true;
-            this.Label7.Location = new System.Drawing.Point(17, 316);
+            this.Label7.Location = new System.Drawing.Point(33, 285);
             this.Label7.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(76, 13);
@@ -280,10 +280,10 @@ namespace StockController
             this.BackupRestoreTC.Controls.Add(this.TabPage3);
             this.BackupRestoreTC.Controls.Add(this.TabPage4);
             this.BackupRestoreTC.Location = new System.Drawing.Point(12, 12);
-            this.BackupRestoreTC.Margin = new System.Windows.Forms.Padding(12);
+            this.BackupRestoreTC.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.BackupRestoreTC.Name = "BackupRestoreTC";
             this.BackupRestoreTC.SelectedIndex = 0;
-            this.BackupRestoreTC.Size = new System.Drawing.Size(595, 426);
+            this.BackupRestoreTC.Size = new System.Drawing.Size(378, 288);
             this.BackupRestoreTC.TabIndex = 2;
             this.BackupRestoreTC.SelectedIndexChanged += new System.EventHandler(this.BackupRestoreTC_SelectedIndexChanged);
             // 
@@ -292,12 +292,27 @@ namespace StockController
             this.TabPage3.BackColor = System.Drawing.Color.Orange;
             this.TabPage3.Controls.Add(this.GroupBox2);
             this.TabPage3.Location = new System.Drawing.Point(4, 22);
-            this.TabPage3.Margin = new System.Windows.Forms.Padding(12);
+            this.TabPage3.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.TabPage3.Name = "TabPage3";
-            this.TabPage3.Padding = new System.Windows.Forms.Padding(12);
-            this.TabPage3.Size = new System.Drawing.Size(587, 400);
+            this.TabPage3.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.TabPage3.Size = new System.Drawing.Size(370, 262);
             this.TabPage3.TabIndex = 0;
             this.TabPage3.Text = "Backup";
+            // 
+            // GroupBox2
+            // 
+            this.GroupBox2.Controls.Add(this.lblBackupinfo);
+            this.GroupBox2.Controls.Add(this.Label11);
+            this.GroupBox2.Controls.Add(this.CmdBackup);
+            this.GroupBox2.Controls.Add(this.ComboBox1);
+            this.GroupBox2.Location = new System.Drawing.Point(12, 12);
+            this.GroupBox2.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.GroupBox2.Name = "GroupBox2";
+            this.GroupBox2.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.GroupBox2.Size = new System.Drawing.Size(339, 226);
+            this.GroupBox2.TabIndex = 0;
+            this.GroupBox2.TabStop = false;
+            this.GroupBox2.Text = "Backup Database";
             // 
             // lblBackupinfo
             // 
@@ -308,21 +323,6 @@ namespace StockController
             this.lblBackupinfo.Size = new System.Drawing.Size(39, 13);
             this.lblBackupinfo.TabIndex = 2;
             this.lblBackupinfo.Text = "Label9";
-            // 
-            // GroupBox2
-            // 
-            this.GroupBox2.Controls.Add(this.lblBackupinfo);
-            this.GroupBox2.Controls.Add(this.Label11);
-            this.GroupBox2.Controls.Add(this.CmdBackup);
-            this.GroupBox2.Controls.Add(this.ComboBox1);
-            this.GroupBox2.Location = new System.Drawing.Point(12, 12);
-            this.GroupBox2.Margin = new System.Windows.Forms.Padding(12);
-            this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Padding = new System.Windows.Forms.Padding(12);
-            this.GroupBox2.Size = new System.Drawing.Size(551, 369);
-            this.GroupBox2.TabIndex = 0;
-            this.GroupBox2.TabStop = false;
-            this.GroupBox2.Text = "Backup Database";
             // 
             // Label11
             // 
@@ -337,10 +337,10 @@ namespace StockController
             // 
             // CmdBackup
             // 
-            this.CmdBackup.Location = new System.Drawing.Point(28, 153);
-            this.CmdBackup.Margin = new System.Windows.Forms.Padding(12);
+            this.CmdBackup.Location = new System.Drawing.Point(24, 131);
+            this.CmdBackup.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.CmdBackup.Name = "CmdBackup";
-            this.CmdBackup.Size = new System.Drawing.Size(347, 85);
+            this.CmdBackup.Size = new System.Drawing.Size(248, 85);
             this.CmdBackup.TabIndex = 1;
             this.CmdBackup.Text = "Create Backup";
             this.CmdBackup.UseVisualStyleBackColor = true;
@@ -351,9 +351,9 @@ namespace StockController
             this.ComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox1.FormattingEnabled = true;
             this.ComboBox1.Location = new System.Drawing.Point(24, 69);
-            this.ComboBox1.Margin = new System.Windows.Forms.Padding(12);
+            this.ComboBox1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(335, 25);
+            this.ComboBox1.Size = new System.Drawing.Size(243, 25);
             this.ComboBox1.TabIndex = 0;
             // 
             // TabPage4
@@ -362,81 +362,81 @@ namespace StockController
             this.TabPage4.Controls.Add(this.lblRestoreInfo);
             this.TabPage4.Controls.Add(this.GroupBox3);
             this.TabPage4.Location = new System.Drawing.Point(4, 22);
-            this.TabPage4.Margin = new System.Windows.Forms.Padding(12);
+            this.TabPage4.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.TabPage4.Name = "TabPage4";
-            this.TabPage4.Padding = new System.Windows.Forms.Padding(12);
-            this.TabPage4.Size = new System.Drawing.Size(587, 400);
+            this.TabPage4.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.TabPage4.Size = new System.Drawing.Size(370, 262);
             this.TabPage4.TabIndex = 1;
             this.TabPage4.Text = "Restore";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(117, 313);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(12);
+            this.txtEmail.Location = new System.Drawing.Point(117, 282);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtEmail.MaxLength = 250;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(672, 20);
+            this.txtEmail.Size = new System.Drawing.Size(268, 20);
             this.txtEmail.TabIndex = 9;
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // txtAdd1
             // 
-            this.txtAdd1.Location = new System.Drawing.Point(117, 53);
-            this.txtAdd1.Margin = new System.Windows.Forms.Padding(12);
+            this.txtAdd1.Location = new System.Drawing.Point(117, 46);
+            this.txtAdd1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtAdd1.MaxLength = 60;
             this.txtAdd1.Name = "txtAdd1";
-            this.txtAdd1.Size = new System.Drawing.Size(672, 20);
+            this.txtAdd1.Size = new System.Drawing.Size(268, 20);
             this.txtAdd1.TabIndex = 1;
             this.txtAdd1.Leave += new System.EventHandler(this.txtAdd1_Leave);
             // 
             // txtWWW
             // 
-            this.txtWWW.Location = new System.Drawing.Point(117, 283);
-            this.txtWWW.Margin = new System.Windows.Forms.Padding(12);
+            this.txtWWW.Location = new System.Drawing.Point(117, 252);
+            this.txtWWW.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtWWW.MaxLength = 90;
             this.txtWWW.Name = "txtWWW";
-            this.txtWWW.Size = new System.Drawing.Size(672, 20);
+            this.txtWWW.Size = new System.Drawing.Size(268, 20);
             this.txtWWW.TabIndex = 8;
             this.txtWWW.Leave += new System.EventHandler(this.txtWWW_Leave);
             // 
             // txtAdd2
             // 
-            this.txtAdd2.Location = new System.Drawing.Point(117, 91);
-            this.txtAdd2.Margin = new System.Windows.Forms.Padding(12);
+            this.txtAdd2.Location = new System.Drawing.Point(117, 76);
+            this.txtAdd2.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtAdd2.MaxLength = 10;
             this.txtAdd2.Name = "txtAdd2";
-            this.txtAdd2.Size = new System.Drawing.Size(672, 20);
+            this.txtAdd2.Size = new System.Drawing.Size(268, 20);
             this.txtAdd2.TabIndex = 2;
             this.txtAdd2.Leave += new System.EventHandler(this.txtAdd2_Leave);
             // 
             // txtFax
             // 
-            this.txtFax.Location = new System.Drawing.Point(117, 250);
-            this.txtFax.Margin = new System.Windows.Forms.Padding(12);
+            this.txtFax.Location = new System.Drawing.Point(117, 219);
+            this.txtFax.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtFax.MaxLength = 20;
             this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(672, 20);
+            this.txtFax.Size = new System.Drawing.Size(268, 20);
             this.txtFax.TabIndex = 7;
             // 
             // TabPage2
             // 
             this.TabPage2.Controls.Add(this.BackupRestoreTC);
             this.TabPage2.Location = new System.Drawing.Point(4, 22);
-            this.TabPage2.Margin = new System.Windows.Forms.Padding(12);
+            this.TabPage2.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.TabPage2.Name = "TabPage2";
-            this.TabPage2.Padding = new System.Windows.Forms.Padding(12);
-            this.TabPage2.Size = new System.Drawing.Size(835, 441);
+            this.TabPage2.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.TabPage2.Size = new System.Drawing.Size(449, 396);
             this.TabPage2.TabIndex = 1;
             this.TabPage2.Text = "Backup / Restore";
             this.TabPage2.UseVisualStyleBackColor = true;
             // 
             // txtAdd3
             // 
-            this.txtAdd3.Location = new System.Drawing.Point(117, 120);
-            this.txtAdd3.Margin = new System.Windows.Forms.Padding(12);
+            this.txtAdd3.Location = new System.Drawing.Point(117, 102);
+            this.txtAdd3.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtAdd3.MaxLength = 10;
             this.txtAdd3.Name = "txtAdd3";
-            this.txtAdd3.Size = new System.Drawing.Size(672, 20);
+            this.txtAdd3.Size = new System.Drawing.Size(268, 20);
             this.txtAdd3.TabIndex = 3;
             this.txtAdd3.Leave += new System.EventHandler(this.txtAdd3_Leave);
             // 
@@ -444,21 +444,21 @@ namespace StockController
             // 
             this.TabControl1.Controls.Add(this.TabPage1);
             this.TabControl1.Controls.Add(this.TabPage2);
-            this.TabControl1.Location = new System.Drawing.Point(21, 21);
-            this.TabControl1.Margin = new System.Windows.Forms.Padding(12);
+            this.TabControl1.Location = new System.Drawing.Point(16, 17);
+            this.TabControl1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.SelectedIndex = 0;
-            this.TabControl1.Size = new System.Drawing.Size(843, 467);
+            this.TabControl1.Size = new System.Drawing.Size(457, 422);
             this.TabControl1.TabIndex = 10;
             // 
             // TabPage1
             // 
             this.TabPage1.Controls.Add(this.GroupBox1);
             this.TabPage1.Location = new System.Drawing.Point(4, 22);
-            this.TabPage1.Margin = new System.Windows.Forms.Padding(12);
+            this.TabPage1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.TabPage1.Name = "TabPage1";
-            this.TabPage1.Padding = new System.Windows.Forms.Padding(12);
-            this.TabPage1.Size = new System.Drawing.Size(835, 441);
+            this.TabPage1.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.TabPage1.Size = new System.Drawing.Size(449, 396);
             this.TabPage1.TabIndex = 0;
             this.TabPage1.Text = "Company Details";
             this.TabPage1.UseVisualStyleBackColor = true;
@@ -487,49 +487,49 @@ namespace StockController
             this.GroupBox1.Controls.Add(this.txtAdd4);
             this.GroupBox1.Controls.Add(this.txtPostCode);
             this.GroupBox1.Location = new System.Drawing.Point(12, 12);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(12);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(12);
-            this.GroupBox1.Size = new System.Drawing.Size(805, 415);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.GroupBox1.Size = new System.Drawing.Size(423, 372);
             this.GroupBox1.TabIndex = 55;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "Settings";
             // 
             // txtTelephone
             // 
-            this.txtTelephone.Location = new System.Drawing.Point(117, 221);
-            this.txtTelephone.Margin = new System.Windows.Forms.Padding(12);
+            this.txtTelephone.Location = new System.Drawing.Point(117, 190);
+            this.txtTelephone.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtTelephone.MaxLength = 20;
             this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(672, 20);
+            this.txtTelephone.Size = new System.Drawing.Size(268, 20);
             this.txtTelephone.TabIndex = 6;
             // 
             // txtAdd4
             // 
-            this.txtAdd4.Location = new System.Drawing.Point(117, 156);
-            this.txtAdd4.Margin = new System.Windows.Forms.Padding(12);
+            this.txtAdd4.Location = new System.Drawing.Point(117, 133);
+            this.txtAdd4.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtAdd4.MaxLength = 10;
             this.txtAdd4.Name = "txtAdd4";
-            this.txtAdd4.Size = new System.Drawing.Size(672, 20);
+            this.txtAdd4.Size = new System.Drawing.Size(268, 20);
             this.txtAdd4.TabIndex = 4;
             this.txtAdd4.Leave += new System.EventHandler(this.txtAdd4_Leave);
             // 
             // txtPostCode
             // 
-            this.txtPostCode.Location = new System.Drawing.Point(117, 192);
-            this.txtPostCode.Margin = new System.Windows.Forms.Padding(12);
+            this.txtPostCode.Location = new System.Drawing.Point(117, 161);
+            this.txtPostCode.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.txtPostCode.MaxLength = 10;
             this.txtPostCode.Name = "txtPostCode";
-            this.txtPostCode.Size = new System.Drawing.Size(244, 20);
+            this.txtPostCode.Size = new System.Drawing.Size(69, 20);
             this.txtPostCode.TabIndex = 5;
             this.txtPostCode.Leave += new System.EventHandler(this.txtPostCode_Leave);
             // 
             // CmdCancel
             // 
-            this.CmdCancel.Location = new System.Drawing.Point(770, 508);
-            this.CmdCancel.Margin = new System.Windows.Forms.Padding(12);
+            this.CmdCancel.Location = new System.Drawing.Point(365, 447);
+            this.CmdCancel.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.CmdCancel.Name = "CmdCancel";
-            this.CmdCancel.Size = new System.Drawing.Size(90, 37);
+            this.CmdCancel.Size = new System.Drawing.Size(90, 24);
             this.CmdCancel.TabIndex = 11;
             this.CmdCancel.Text = "Cancel";
             this.CmdCancel.UseVisualStyleBackColor = true;
@@ -537,10 +537,10 @@ namespace StockController
             // 
             // CmdOK
             // 
-            this.CmdOK.Location = new System.Drawing.Point(656, 508);
-            this.CmdOK.Margin = new System.Windows.Forms.Padding(12);
+            this.CmdOK.Location = new System.Drawing.Point(268, 447);
+            this.CmdOK.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.CmdOK.Name = "CmdOK";
-            this.CmdOK.Size = new System.Drawing.Size(90, 37);
+            this.CmdOK.Size = new System.Drawing.Size(90, 24);
             this.CmdOK.TabIndex = 9;
             this.CmdOK.Text = "OK";
             this.CmdOK.UseVisualStyleBackColor = true;
@@ -550,12 +550,13 @@ namespace StockController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(876, 555);
+            this.ClientSize = new System.Drawing.Size(480, 478);
             this.Controls.Add(this.TabControl1);
             this.Controls.Add(this.CmdCancel);
             this.Controls.Add(this.CmdOK);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "SettingForm";
-            this.Text = "SettingForm";
+            this.Text = "Settings ";
             this.Load += new System.EventHandler(this.SettingForm_Load);
             this.GroupBox3.ResumeLayout(false);
             this.GroupBox3.PerformLayout();
