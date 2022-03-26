@@ -37,7 +37,7 @@ namespace StockController
             this.Label6 = new System.Windows.Forms.Label();
             this.txtTotalLoss = new System.Windows.Forms.TextBox();
             this.txtTotalGain = new System.Windows.Forms.TextBox();
-            this.dgvItems = new System.Windows.Forms.DataGridView();
+            this.DgvItems = new System.Windows.Forms.DataGridView();
             this.stockCodeCol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TransFromQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TransToQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,8 +62,8 @@ namespace StockController
             this.Label2 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
-            this.txtStockCode = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
+            this.TxtStockCode = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvItems)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtSID
@@ -125,23 +125,24 @@ namespace StockController
             this.txtTotalGain.Size = new System.Drawing.Size(91, 24);
             this.txtTotalGain.TabIndex = 72;
             // 
-            // dgvItems
+            // DgvItems
             // 
-            this.dgvItems.AllowUserToAddRows = false;
-            this.dgvItems.AllowUserToDeleteRows = false;
-            this.dgvItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DgvItems.AllowUserToAddRows = false;
+            this.DgvItems.AllowUserToDeleteRows = false;
+            this.DgvItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.stockCodeCol,
             this.TransFromQty,
             this.TransToQty,
             this.UnitPrices});
-            this.dgvItems.Location = new System.Drawing.Point(15, 201);
-            this.dgvItems.Margin = new System.Windows.Forms.Padding(6);
-            this.dgvItems.Name = "dgvItems";
-            this.dgvItems.RowHeadersWidth = 51;
-            this.dgvItems.Size = new System.Drawing.Size(626, 228);
-            this.dgvItems.TabIndex = 75;
+            this.DgvItems.Location = new System.Drawing.Point(15, 201);
+            this.DgvItems.Margin = new System.Windows.Forms.Padding(6);
+            this.DgvItems.Name = "DgvItems";
+            this.DgvItems.RowHeadersWidth = 51;
+            this.DgvItems.Size = new System.Drawing.Size(626, 228);
+            this.DgvItems.TabIndex = 75;
+            this.DgvItems.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvItems_CellEndEdit);
             // 
             // stockCodeCol
             // 
@@ -185,6 +186,7 @@ namespace StockController
             this.CmdDeleteFromGrid.TabIndex = 63;
             this.CmdDeleteFromGrid.Text = "-";
             this.CmdDeleteFromGrid.UseVisualStyleBackColor = true;
+            this.CmdDeleteFromGrid.Click += new System.EventHandler(this.CmdDeleteFromGrid_Click);
             // 
             // cboType
             // 
@@ -234,6 +236,7 @@ namespace StockController
             this.CmdAddToGrid.TabIndex = 62;
             this.CmdAddToGrid.Text = "+";
             this.CmdAddToGrid.UseVisualStyleBackColor = true;
+            this.CmdAddToGrid.Click += new System.EventHandler(this.CmdAddToGrid_Click);
             // 
             // Label7
             // 
@@ -276,6 +279,7 @@ namespace StockController
             this.DtpDate.Size = new System.Drawing.Size(324, 24);
             this.DtpDate.TabIndex = 56;
             this.DtpDate.Value = new System.DateTime(2017, 9, 1, 0, 0, 0, 0);
+            this.DtpDate.ValueChanged += new System.EventHandler(this.DtpDate_ValueChanged);
             // 
             // Label10
             // 
@@ -298,6 +302,7 @@ namespace StockController
             this.CmdOK.TabIndex = 64;
             this.CmdOK.Text = "Add";
             this.CmdOK.UseVisualStyleBackColor = true;
+            this.CmdOK.Click += new System.EventHandler(this.CmdOK_Click);
             // 
             // txtCurrentHangers
             // 
@@ -318,6 +323,7 @@ namespace StockController
             this.CmdCancel.TabIndex = 66;
             this.CmdCancel.Text = "Cancel";
             this.CmdCancel.UseVisualStyleBackColor = true;
+            this.CmdCancel.Click += new System.EventHandler(this.CmdCancel_Click);
             // 
             // CmdClear
             // 
@@ -329,6 +335,7 @@ namespace StockController
             this.CmdClear.TabIndex = 65;
             this.CmdClear.Text = "Clear";
             this.CmdClear.UseVisualStyleBackColor = true;
+            this.CmdClear.Click += new System.EventHandler(this.CmdClear_Click);
             // 
             // txtShopRef
             // 
@@ -339,6 +346,7 @@ namespace StockController
             this.txtShopRef.Name = "txtShopRef";
             this.txtShopRef.Size = new System.Drawing.Size(112, 24);
             this.txtShopRef.TabIndex = 58;
+            this.txtShopRef.Leave += new System.EventHandler(this.TxtShopRef_Leave);
             // 
             // txtReference
             // 
@@ -394,15 +402,16 @@ namespace StockController
             this.Label3.TabIndex = 76;
             this.Label3.Text = "Stock Code:";
             // 
-            // txtStockCode
+            // TxtStockCode
             // 
-            this.txtStockCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtStockCode.Location = new System.Drawing.Point(15, 163);
-            this.txtStockCode.Margin = new System.Windows.Forms.Padding(6);
-            this.txtStockCode.MaxLength = 30;
-            this.txtStockCode.Name = "txtStockCode";
-            this.txtStockCode.Size = new System.Drawing.Size(192, 24);
-            this.txtStockCode.TabIndex = 59;
+            this.TxtStockCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtStockCode.Location = new System.Drawing.Point(15, 163);
+            this.TxtStockCode.Margin = new System.Windows.Forms.Padding(6);
+            this.TxtStockCode.MaxLength = 30;
+            this.TxtStockCode.Name = "TxtStockCode";
+            this.TxtStockCode.Size = new System.Drawing.Size(192, 24);
+            this.TxtStockCode.TabIndex = 59;
+            this.TxtStockCode.Leave += new System.EventHandler(this.TxtStockCode_Leave);
             // 
             // ShopAdjustmentForm
             // 
@@ -415,7 +424,7 @@ namespace StockController
             this.Controls.Add(this.Label6);
             this.Controls.Add(this.txtTotalLoss);
             this.Controls.Add(this.txtTotalGain);
-            this.Controls.Add(this.dgvItems);
+            this.Controls.Add(this.DgvItems);
             this.Controls.Add(this.CmdDeleteFromGrid);
             this.Controls.Add(this.cboType);
             this.Controls.Add(this.txtAdjustHangers);
@@ -436,11 +445,11 @@ namespace StockController
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label4);
             this.Controls.Add(this.Label3);
-            this.Controls.Add(this.txtStockCode);
+            this.Controls.Add(this.TxtStockCode);
             this.Name = "ShopAdjustmentForm";
             this.Text = "ShopAdjustmentForm";
             this.Load += new System.EventHandler(this.ShopAdjustmentForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvItems)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,7 +463,7 @@ namespace StockController
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.TextBox txtTotalLoss;
         internal System.Windows.Forms.TextBox txtTotalGain;
-        internal System.Windows.Forms.DataGridView dgvItems;
+        internal System.Windows.Forms.DataGridView DgvItems;
         private System.Windows.Forms.DataGridViewTextBoxColumn stockCodeCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn TransFromQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn TransToQty;
@@ -479,6 +488,6 @@ namespace StockController
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.TextBox txtStockCode;
+        internal System.Windows.Forms.TextBox TxtStockCode;
     }
 }
