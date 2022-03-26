@@ -65,192 +65,6 @@ namespace StockController
             ((System.ComponentModel.ISupportInitialize)(this.DgvLocationQty)).BeginInit();
             this.SuspendLayout();
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(56, 216);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 124;
-            this.label7.Text = "Hangers:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(330, 40);
-            this.label6.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 13);
-            this.label6.TabIndex = 123;
-            this.label6.Text = "Location Stock Levels";
-            // 
-            // DgvLocationQty
-            // 
-            this.DgvLocationQty.AllowUserToAddRows = false;
-            this.DgvLocationQty.AllowUserToDeleteRows = false;
-            this.DgvLocationQty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvLocationQty.Location = new System.Drawing.Point(270, 56);
-            this.DgvLocationQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.DgvLocationQty.Name = "DgvLocationQty";
-            this.DgvLocationQty.ReadOnly = true;
-            this.DgvLocationQty.RowHeadersWidth = 62;
-            this.DgvLocationQty.Size = new System.Drawing.Size(522, 429);
-            this.DgvLocationQty.TabIndex = 122;
-            // 
-            // TxtDelHangersQty
-            // 
-            this.TxtDelHangersQty.Location = new System.Drawing.Point(113, 216);
-            this.TxtDelHangersQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.TxtDelHangersQty.Name = "TxtDelHangersQty";
-            this.TxtDelHangersQty.Size = new System.Drawing.Size(142, 20);
-            this.TxtDelHangersQty.TabIndex = 121;
-            // 
-            // TxtDelGarmentsQty
-            // 
-            this.TxtDelGarmentsQty.Location = new System.Drawing.Point(115, 284);
-            this.TxtDelGarmentsQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.TxtDelGarmentsQty.Name = "TxtDelGarmentsQty";
-            this.TxtDelGarmentsQty.Size = new System.Drawing.Size(138, 20);
-            this.TxtDelGarmentsQty.TabIndex = 120;
-            // 
-            // TxtDelBoxesQty
-            // 
-            this.TxtDelBoxesQty.Location = new System.Drawing.Point(113, 251);
-            this.TxtDelBoxesQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.TxtDelBoxesQty.Name = "TxtDelBoxesQty";
-            this.TxtDelBoxesQty.Size = new System.Drawing.Size(142, 20);
-            this.TxtDelBoxesQty.TabIndex = 119;
-            // 
-            // TxtPcMarkUp
-            // 
-            this.TxtPcMarkUp.Location = new System.Drawing.Point(100, 170);
-            this.TxtPcMarkUp.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.TxtPcMarkUp.Name = "TxtPcMarkUp";
-            this.TxtPcMarkUp.Size = new System.Drawing.Size(216, 20);
-            this.TxtPcMarkUp.TabIndex = 118;
-            // 
-            // TxtCostValue
-            // 
-            this.TxtCostValue.Location = new System.Drawing.Point(100, 120);
-            this.TxtCostValue.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.TxtCostValue.Name = "TxtCostValue";
-            this.TxtCostValue.Size = new System.Drawing.Size(216, 20);
-            this.TxtCostValue.TabIndex = 117;
-            // 
-            // TxtAmountTaken
-            // 
-            this.TxtAmountTaken.Location = new System.Drawing.Point(100, 145);
-            this.TxtAmountTaken.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.TxtAmountTaken.Name = "TxtAmountTaken";
-            this.TxtAmountTaken.Size = new System.Drawing.Size(216, 20);
-            this.TxtAmountTaken.TabIndex = 116;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 286);
-            this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
-            this.label5.TabIndex = 115;
-            this.label5.Text = "Garments:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(67, 253);
-            this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 13);
-            this.label4.TabIndex = 114;
-            this.label4.Text = "Boxes:";
-            // 
-            // CboSeason
-            // 
-            this.CboSeason.FormattingEnabled = true;
-            this.CboSeason.Location = new System.Drawing.Point(100, 75);
-            this.CboSeason.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.CboSeason.Name = "CboSeason";
-            this.CboSeason.Size = new System.Drawing.Size(320, 21);
-            this.CboSeason.TabIndex = 113;
-            // 
-            // TxtSupplierRef
-            // 
-            this.TxtSupplierRef.Location = new System.Drawing.Point(100, 49);
-            this.TxtSupplierRef.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.TxtSupplierRef.Name = "TxtSupplierRef";
-            this.TxtSupplierRef.Size = new System.Drawing.Size(320, 20);
-            this.TxtSupplierRef.TabIndex = 112;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(144, 98);
-            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 13);
-            this.label3.TabIndex = 111;
-            this.label3.Text = "Zero Qty:";
-            // 
-            // ChkZeroQty
-            // 
-            this.ChkZeroQty.AutoSize = true;
-            this.ChkZeroQty.Location = new System.Drawing.Point(211, 101);
-            this.ChkZeroQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.ChkZeroQty.Name = "ChkZeroQty";
-            this.ChkZeroQty.Size = new System.Drawing.Size(15, 14);
-            this.ChkZeroQty.TabIndex = 110;
-            this.ChkZeroQty.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(112, 192);
-            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
-            this.label2.TabIndex = 109;
-            this.label2.Text = "Delivered Qty:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(47, 78);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 108;
-            this.label1.Text = "Season:";
-            // 
-            // TxtStockCode
-            // 
-            this.TxtStockCode.Location = new System.Drawing.Point(100, 24);
-            this.TxtStockCode.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
-            this.TxtStockCode.Name = "TxtStockCode";
-            this.TxtStockCode.Size = new System.Drawing.Size(320, 20);
-            this.TxtStockCode.TabIndex = 107;
-            // 
-            // CmdCancel
-            // 
-            this.CmdCancel.Location = new System.Drawing.Point(468, 278);
-            this.CmdCancel.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.CmdCancel.Name = "CmdCancel";
-            this.CmdCancel.Size = new System.Drawing.Size(126, 58);
-            this.CmdCancel.TabIndex = 100;
-            this.CmdCancel.Text = "Cancel";
-            this.CmdCancel.UseVisualStyleBackColor = true;
-            // 
-            // CmdOK
-            // 
-            this.CmdOK.Location = new System.Drawing.Point(397, 277);
-            this.CmdOK.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.CmdOK.Name = "CmdOK";
-            this.CmdOK.Size = new System.Drawing.Size(122, 58);
-            this.CmdOK.TabIndex = 99;
-            this.CmdOK.Text = "Button1";
-            this.CmdOK.UseVisualStyleBackColor = true;
-            // 
             // StockCodeLabel
             // 
             StockCodeLabel.AutoSize = true;
@@ -281,19 +95,10 @@ namespace StockController
             DeadCodeLabel.TabIndex = 103;
             DeadCodeLabel.Text = "Dead Code:";
             // 
-            // ChkDeadCode
-            // 
-            this.ChkDeadCode.Location = new System.Drawing.Point(100, 92);
-            this.ChkDeadCode.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.ChkDeadCode.Name = "ChkDeadCode";
-            this.ChkDeadCode.Size = new System.Drawing.Size(70, 63);
-            this.ChkDeadCode.TabIndex = 98;
-            this.ChkDeadCode.UseVisualStyleBackColor = true;
-            // 
             // AmountTakenLabel
             // 
             AmountTakenLabel.AutoSize = true;
-            AmountTakenLabel.Location = new System.Drawing.Point(13, 145);
+            AmountTakenLabel.Location = new System.Drawing.Point(13, 159);
             AmountTakenLabel.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             AmountTakenLabel.Name = "AmountTakenLabel";
             AmountTakenLabel.Size = new System.Drawing.Size(80, 13);
@@ -303,7 +108,7 @@ namespace StockController
             // CostValueLabel
             // 
             CostValueLabel.AutoSize = true;
-            CostValueLabel.Location = new System.Drawing.Point(32, 120);
+            CostValueLabel.Location = new System.Drawing.Point(32, 134);
             CostValueLabel.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             CostValueLabel.Name = "CostValueLabel";
             CostValueLabel.Size = new System.Drawing.Size(61, 13);
@@ -313,18 +118,217 @@ namespace StockController
             // PCMarkUpLabel
             // 
             PCMarkUpLabel.AutoSize = true;
-            PCMarkUpLabel.Location = new System.Drawing.Point(28, 173);
+            PCMarkUpLabel.Location = new System.Drawing.Point(28, 187);
             PCMarkUpLabel.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             PCMarkUpLabel.Name = "PCMarkUpLabel";
             PCMarkUpLabel.Size = new System.Drawing.Size(65, 13);
             PCMarkUpLabel.TabIndex = 106;
             PCMarkUpLabel.Text = "PCMark Up:";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(41, 234);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 13);
+            this.label7.TabIndex = 124;
+            this.label7.Text = "Hangers:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(533, 6);
+            this.label6.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(113, 13);
+            this.label6.TabIndex = 123;
+            this.label6.Text = "Location Stock Levels";
+            // 
+            // DgvLocationQty
+            // 
+            this.DgvLocationQty.AllowUserToAddRows = false;
+            this.DgvLocationQty.AllowUserToDeleteRows = false;
+            this.DgvLocationQty.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvLocationQty.Location = new System.Drawing.Point(436, 25);
+            this.DgvLocationQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.DgvLocationQty.Name = "DgvLocationQty";
+            this.DgvLocationQty.ReadOnly = true;
+            this.DgvLocationQty.RowHeadersWidth = 62;
+            this.DgvLocationQty.Size = new System.Drawing.Size(305, 269);
+            this.DgvLocationQty.TabIndex = 122;
+            // 
+            // TxtDelHangersQty
+            // 
+            this.TxtDelHangersQty.Location = new System.Drawing.Point(98, 234);
+            this.TxtDelHangersQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.TxtDelHangersQty.Name = "TxtDelHangersQty";
+            this.TxtDelHangersQty.Size = new System.Drawing.Size(142, 20);
+            this.TxtDelHangersQty.TabIndex = 121;
+            // 
+            // TxtDelGarmentsQty
+            // 
+            this.TxtDelGarmentsQty.Location = new System.Drawing.Point(100, 302);
+            this.TxtDelGarmentsQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.TxtDelGarmentsQty.Name = "TxtDelGarmentsQty";
+            this.TxtDelGarmentsQty.Size = new System.Drawing.Size(138, 20);
+            this.TxtDelGarmentsQty.TabIndex = 120;
+            // 
+            // TxtDelBoxesQty
+            // 
+            this.TxtDelBoxesQty.Location = new System.Drawing.Point(98, 269);
+            this.TxtDelBoxesQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.TxtDelBoxesQty.Name = "TxtDelBoxesQty";
+            this.TxtDelBoxesQty.Size = new System.Drawing.Size(142, 20);
+            this.TxtDelBoxesQty.TabIndex = 119;
+            // 
+            // TxtPcMarkUp
+            // 
+            this.TxtPcMarkUp.Location = new System.Drawing.Point(100, 184);
+            this.TxtPcMarkUp.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.TxtPcMarkUp.Name = "TxtPcMarkUp";
+            this.TxtPcMarkUp.Size = new System.Drawing.Size(216, 20);
+            this.TxtPcMarkUp.TabIndex = 118;
+            // 
+            // TxtCostValue
+            // 
+            this.TxtCostValue.Location = new System.Drawing.Point(100, 134);
+            this.TxtCostValue.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.TxtCostValue.Name = "TxtCostValue";
+            this.TxtCostValue.Size = new System.Drawing.Size(216, 20);
+            this.TxtCostValue.TabIndex = 117;
+            // 
+            // TxtAmountTaken
+            // 
+            this.TxtAmountTaken.Location = new System.Drawing.Point(100, 159);
+            this.TxtAmountTaken.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.TxtAmountTaken.Name = "TxtAmountTaken";
+            this.TxtAmountTaken.Size = new System.Drawing.Size(216, 20);
+            this.TxtAmountTaken.TabIndex = 116;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(36, 304);
+            this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 115;
+            this.label5.Text = "Garments:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(52, 271);
+            this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 13);
+            this.label4.TabIndex = 114;
+            this.label4.Text = "Boxes:";
+            // 
+            // CboSeason
+            // 
+            this.CboSeason.FormattingEnabled = true;
+            this.CboSeason.Location = new System.Drawing.Point(100, 75);
+            this.CboSeason.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.CboSeason.Name = "CboSeason";
+            this.CboSeason.Size = new System.Drawing.Size(320, 21);
+            this.CboSeason.TabIndex = 113;
+            // 
+            // TxtSupplierRef
+            // 
+            this.TxtSupplierRef.Location = new System.Drawing.Point(100, 49);
+            this.TxtSupplierRef.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.TxtSupplierRef.Name = "TxtSupplierRef";
+            this.TxtSupplierRef.Size = new System.Drawing.Size(320, 20);
+            this.TxtSupplierRef.TabIndex = 112;
+            this.TxtSupplierRef.Leave += new System.EventHandler(this.TxtSupplierRef_Leave);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(144, 105);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 111;
+            this.label3.Text = "Zero Qty:";
+            // 
+            // ChkZeroQty
+            // 
+            this.ChkZeroQty.AutoSize = true;
+            this.ChkZeroQty.Location = new System.Drawing.Point(211, 108);
+            this.ChkZeroQty.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.ChkZeroQty.Name = "ChkZeroQty";
+            this.ChkZeroQty.Size = new System.Drawing.Size(15, 14);
+            this.ChkZeroQty.TabIndex = 110;
+            this.ChkZeroQty.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(97, 210);
+            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 109;
+            this.label2.Text = "Delivered Qty:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(47, 78);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 108;
+            this.label1.Text = "Season:";
+            // 
+            // TxtStockCode
+            // 
+            this.TxtStockCode.Location = new System.Drawing.Point(100, 24);
+            this.TxtStockCode.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.TxtStockCode.Name = "TxtStockCode";
+            this.TxtStockCode.Size = new System.Drawing.Size(320, 20);
+            this.TxtStockCode.TabIndex = 107;
+            this.TxtStockCode.Leave += new System.EventHandler(this.TxtStockCode_Leave);
+            // 
+            // CmdCancel
+            // 
+            this.CmdCancel.Location = new System.Drawing.Point(656, 308);
+            this.CmdCancel.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.CmdCancel.Name = "CmdCancel";
+            this.CmdCancel.Size = new System.Drawing.Size(85, 27);
+            this.CmdCancel.TabIndex = 100;
+            this.CmdCancel.Text = "Cancel";
+            this.CmdCancel.UseVisualStyleBackColor = true;
+            this.CmdCancel.Click += new System.EventHandler(this.CmdCancel_Click);
+            // 
+            // CmdOK
+            // 
+            this.CmdOK.Location = new System.Drawing.Point(556, 308);
+            this.CmdOK.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.CmdOK.Name = "CmdOK";
+            this.CmdOK.Size = new System.Drawing.Size(80, 27);
+            this.CmdOK.TabIndex = 99;
+            this.CmdOK.Text = "Button1";
+            this.CmdOK.UseVisualStyleBackColor = true;
+            this.CmdOK.Click += new System.EventHandler(this.CmdOK_Click);
+            // 
+            // ChkDeadCode
+            // 
+            this.ChkDeadCode.Location = new System.Drawing.Point(100, 102);
+            this.ChkDeadCode.Margin = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.ChkDeadCode.Name = "ChkDeadCode";
+            this.ChkDeadCode.Size = new System.Drawing.Size(70, 20);
+            this.ChkDeadCode.TabIndex = 98;
+            this.ChkDeadCode.UseVisualStyleBackColor = true;
+            // 
             // StockForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(757, 344);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.DgvLocationQty);
@@ -354,6 +358,7 @@ namespace StockController
             this.Controls.Add(PCMarkUpLabel);
             this.Name = "StockForm";
             this.Text = "StockForm";
+            this.Load += new System.EventHandler(this.StockForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvLocationQty)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
