@@ -64,7 +64,7 @@ namespace StockController
             // Label9
             // 
             this.Label9.AutoSize = true;
-            this.Label9.Location = new System.Drawing.Point(18, 44);
+            this.Label9.Location = new System.Drawing.Point(19, 9);
             this.Label9.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(82, 13);
@@ -73,7 +73,7 @@ namespace StockController
             // 
             // TxtTransferID
             // 
-            this.TxtTransferID.Location = new System.Drawing.Point(111, 41);
+            this.TxtTransferID.Location = new System.Drawing.Point(111, 6);
             this.TxtTransferID.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.TxtTransferID.Name = "TxtTransferID";
             this.TxtTransferID.Size = new System.Drawing.Size(364, 20);
@@ -90,12 +90,13 @@ namespace StockController
             this.Column6,
             this.Column7,
             this.Column8});
-            this.DgvRecords.Location = new System.Drawing.Point(21, 360);
+            this.DgvRecords.Location = new System.Drawing.Point(5, 229);
             this.DgvRecords.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.DgvRecords.Name = "DgvRecords";
             this.DgvRecords.RowHeadersWidth = 51;
-            this.DgvRecords.Size = new System.Drawing.Size(958, 612);
+            this.DgvRecords.Size = new System.Drawing.Size(516, 268);
             this.DgvRecords.TabIndex = 83;
+            this.DgvRecords.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvRecords_CellEndEdit);
             // 
             // Column5
             // 
@@ -128,97 +129,102 @@ namespace StockController
             // CmdDeleteFromGrid
             // 
             this.CmdDeleteFromGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdDeleteFromGrid.Location = new System.Drawing.Point(378, 315);
+            this.CmdDeleteFromGrid.Location = new System.Drawing.Point(331, 175);
             this.CmdDeleteFromGrid.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.CmdDeleteFromGrid.Name = "CmdDeleteFromGrid";
-            this.CmdDeleteFromGrid.Size = new System.Drawing.Size(100, 73);
+            this.CmdDeleteFromGrid.Size = new System.Drawing.Size(40, 48);
             this.CmdDeleteFromGrid.TabIndex = 82;
             this.CmdDeleteFromGrid.Text = "-";
             this.CmdDeleteFromGrid.UseVisualStyleBackColor = true;
+            this.CmdDeleteFromGrid.Click += new System.EventHandler(this.CmdDeleteFromGrid_Click);
             // 
             // CmdAddToGrid
             // 
             this.CmdAddToGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CmdAddToGrid.Location = new System.Drawing.Point(306, 315);
+            this.CmdAddToGrid.Location = new System.Drawing.Point(276, 175);
             this.CmdAddToGrid.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.CmdAddToGrid.Name = "CmdAddToGrid";
-            this.CmdAddToGrid.Size = new System.Drawing.Size(124, 73);
+            this.CmdAddToGrid.Size = new System.Drawing.Size(44, 48);
             this.CmdAddToGrid.TabIndex = 81;
             this.CmdAddToGrid.Text = "+";
             this.CmdAddToGrid.UseVisualStyleBackColor = true;
+            this.CmdAddToGrid.Click += new System.EventHandler(this.CmdAddToGrid_Click);
             // 
             // txtTotalTransferTo
             // 
-            this.txtTotalTransferTo.Location = new System.Drawing.Point(412, 678);
+            this.txtTotalTransferTo.Location = new System.Drawing.Point(407, 504);
             this.txtTotalTransferTo.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtTotalTransferTo.Name = "txtTotalTransferTo";
-            this.txtTotalTransferTo.Size = new System.Drawing.Size(174, 20);
+            this.txtTotalTransferTo.Size = new System.Drawing.Size(114, 20);
             this.txtTotalTransferTo.TabIndex = 99;
             // 
             // TxtTransferFromQty
             // 
-            this.TxtTransferFromQty.Location = new System.Drawing.Point(111, 319);
+            this.TxtTransferFromQty.Location = new System.Drawing.Point(111, 201);
             this.TxtTransferFromQty.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.TxtTransferFromQty.Name = "TxtTransferFromQty";
-            this.TxtTransferFromQty.Size = new System.Drawing.Size(364, 20);
+            this.TxtTransferFromQty.Size = new System.Drawing.Size(145, 20);
             this.TxtTransferFromQty.TabIndex = 80;
             // 
             // TxtCurrentQty
             // 
-            this.TxtCurrentQty.Location = new System.Drawing.Point(111, 280);
+            this.TxtCurrentQty.Location = new System.Drawing.Point(111, 175);
             this.TxtCurrentQty.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.TxtCurrentQty.Name = "TxtCurrentQty";
-            this.TxtCurrentQty.Size = new System.Drawing.Size(364, 20);
+            this.TxtCurrentQty.Size = new System.Drawing.Size(145, 20);
             this.TxtCurrentQty.TabIndex = 97;
             // 
             // TxtStockCode
             // 
-            this.TxtStockCode.Location = new System.Drawing.Point(111, 239);
+            this.TxtStockCode.Location = new System.Drawing.Point(111, 145);
             this.TxtStockCode.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.TxtStockCode.MaxLength = 30;
             this.TxtStockCode.Name = "TxtStockCode";
             this.TxtStockCode.Size = new System.Drawing.Size(364, 20);
             this.TxtStockCode.TabIndex = 79;
+            this.TxtStockCode.Leave += new System.EventHandler(this.TxtStockCode_Leave);
             // 
             // txtToShopName
             // 
-            this.txtToShopName.Location = new System.Drawing.Point(206, 200);
+            this.txtToShopName.Location = new System.Drawing.Point(206, 113);
             this.txtToShopName.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtToShopName.Name = "txtToShopName";
-            this.txtToShopName.Size = new System.Drawing.Size(528, 20);
+            this.txtToShopName.Size = new System.Drawing.Size(315, 20);
             this.txtToShopName.TabIndex = 92;
             this.txtToShopName.TabStop = false;
             // 
             // TxtToShopRef
             // 
-            this.TxtToShopRef.Location = new System.Drawing.Point(111, 200);
+            this.TxtToShopRef.Location = new System.Drawing.Point(111, 113);
             this.TxtToShopRef.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.TxtToShopRef.MaxLength = 8;
             this.TxtToShopRef.Name = "TxtToShopRef";
-            this.TxtToShopRef.Size = new System.Drawing.Size(164, 20);
+            this.TxtToShopRef.Size = new System.Drawing.Size(92, 20);
             this.TxtToShopRef.TabIndex = 78;
+            this.TxtToShopRef.Leave += new System.EventHandler(this.TxtToShopRef_Leave);
             // 
             // txtFromShopName
             // 
-            this.txtFromShopName.Location = new System.Drawing.Point(206, 160);
+            this.txtFromShopName.Location = new System.Drawing.Point(206, 89);
             this.txtFromShopName.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtFromShopName.Name = "txtFromShopName";
-            this.txtFromShopName.Size = new System.Drawing.Size(528, 20);
+            this.txtFromShopName.Size = new System.Drawing.Size(315, 20);
             this.txtFromShopName.TabIndex = 91;
             this.txtFromShopName.TabStop = false;
             // 
             // TxtFromShopRef
             // 
-            this.TxtFromShopRef.Location = new System.Drawing.Point(111, 160);
+            this.TxtFromShopRef.Location = new System.Drawing.Point(111, 89);
             this.TxtFromShopRef.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.TxtFromShopRef.MaxLength = 8;
             this.TxtFromShopRef.Name = "TxtFromShopRef";
-            this.TxtFromShopRef.Size = new System.Drawing.Size(164, 20);
+            this.TxtFromShopRef.Size = new System.Drawing.Size(92, 20);
             this.TxtFromShopRef.TabIndex = 77;
+            this.TxtFromShopRef.Leave += new System.EventHandler(this.TxtFromShopRef_Leave);
             // 
             // TxtTFNote
             // 
-            this.TxtTFNote.Location = new System.Drawing.Point(111, 120);
+            this.TxtTFNote.Location = new System.Drawing.Point(111, 59);
             this.TxtTFNote.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.TxtTFNote.MaxLength = 30;
             this.TxtTFNote.Name = "TxtTFNote";
@@ -227,48 +233,52 @@ namespace StockController
             // 
             // CmdClear
             // 
-            this.CmdClear.Location = new System.Drawing.Point(391, 717);
+            this.CmdClear.Location = new System.Drawing.Point(404, 538);
             this.CmdClear.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.CmdClear.Name = "CmdClear";
-            this.CmdClear.Size = new System.Drawing.Size(280, 73);
+            this.CmdClear.Size = new System.Drawing.Size(117, 45);
             this.CmdClear.TabIndex = 86;
             this.CmdClear.Text = "Clear";
             this.CmdClear.UseVisualStyleBackColor = true;
+            this.CmdClear.Click += new System.EventHandler(this.CmdClear_Click);
             // 
             // CmdOK
             // 
-            this.CmdOK.Location = new System.Drawing.Point(91, 717);
+            this.CmdOK.Location = new System.Drawing.Point(139, 538);
             this.CmdOK.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.CmdOK.Name = "CmdOK";
-            this.CmdOK.Size = new System.Drawing.Size(280, 73);
+            this.CmdOK.Size = new System.Drawing.Size(117, 45);
             this.CmdOK.TabIndex = 84;
             this.CmdOK.Text = "Ok";
             this.CmdOK.UseVisualStyleBackColor = true;
+            this.CmdOK.Click += new System.EventHandler(this.CmdOK_Click);
             // 
             // CmdCancel
             // 
-            this.CmdCancel.Location = new System.Drawing.Point(241, 717);
+            this.CmdCancel.Location = new System.Drawing.Point(276, 538);
             this.CmdCancel.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.CmdCancel.Name = "CmdCancel";
-            this.CmdCancel.Size = new System.Drawing.Size(280, 73);
+            this.CmdCancel.Size = new System.Drawing.Size(117, 45);
             this.CmdCancel.TabIndex = 85;
             this.CmdCancel.Text = "Cancel";
             this.CmdCancel.UseVisualStyleBackColor = true;
+            this.CmdCancel.Click += new System.EventHandler(this.CmdCancel_Click);
             // 
             // DtpDate
             // 
-            this.DtpDate.Location = new System.Drawing.Point(111, 81);
+            this.DtpDate.Location = new System.Drawing.Point(111, 34);
             this.DtpDate.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.DtpDate.Name = "DtpDate";
-            this.DtpDate.Size = new System.Drawing.Size(720, 20);
+            this.DtpDate.Size = new System.Drawing.Size(194, 20);
             this.DtpDate.TabIndex = 75;
             this.DtpDate.Value = new System.DateTime(2017, 9, 1, 0, 0, 0, 0);
+            this.DtpDate.ValueChanged += new System.EventHandler(this.DtpDate_ValueChanged);
             // 
             // Label7
             // 
             this.Label7.AutoSize = true;
             this.Label7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Label7.Location = new System.Drawing.Point(32, 322);
+            this.Label7.Location = new System.Drawing.Point(33, 204);
             this.Label7.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(68, 13);
@@ -278,7 +288,7 @@ namespace StockController
             // Label6
             // 
             this.Label6.AutoSize = true;
-            this.Label6.Location = new System.Drawing.Point(37, 282);
+            this.Label6.Location = new System.Drawing.Point(38, 182);
             this.Label6.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(63, 13);
@@ -289,7 +299,7 @@ namespace StockController
             // 
             this.Label5.AutoSize = true;
             this.Label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Label5.Location = new System.Drawing.Point(34, 247);
+            this.Label5.Location = new System.Drawing.Point(35, 148);
             this.Label5.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(66, 13);
@@ -300,7 +310,7 @@ namespace StockController
             // 
             this.Label4.AutoSize = true;
             this.Label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Label4.Location = new System.Drawing.Point(68, 80);
+            this.Label4.Location = new System.Drawing.Point(68, 40);
             this.Label4.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(33, 13);
@@ -311,7 +321,7 @@ namespace StockController
             // 
             this.Label3.AutoSize = true;
             this.Label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Label3.Location = new System.Drawing.Point(50, 203);
+            this.Label3.Location = new System.Drawing.Point(50, 120);
             this.Label3.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(51, 13);
@@ -322,7 +332,7 @@ namespace StockController
             // 
             this.Label2.AutoSize = true;
             this.Label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.Label2.Location = new System.Drawing.Point(43, 163);
+            this.Label2.Location = new System.Drawing.Point(43, 92);
             this.Label2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(58, 13);
@@ -332,7 +342,7 @@ namespace StockController
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(34, 119);
+            this.Label1.Location = new System.Drawing.Point(37, 62);
             this.Label1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(66, 13);
@@ -343,7 +353,7 @@ namespace StockController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 921);
+            this.ClientSize = new System.Drawing.Size(540, 595);
             this.Controls.Add(this.Label9);
             this.Controls.Add(this.TxtTransferID);
             this.Controls.Add(this.DgvRecords);
