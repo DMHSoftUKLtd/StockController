@@ -49,18 +49,18 @@ namespace StockController
             this.Label15 = new System.Windows.Forms.Label();
             this.DgvRecords = new System.Windows.Forms.DataGridView();
             this.DtpTransaction = new System.Windows.Forms.DateTimePicker();
-            this.txtTotalDelivered = new System.Windows.Forms.TextBox();
+            this.TxtTotalDelivered = new System.Windows.Forms.TextBox();
             this.Label12 = new System.Windows.Forms.Label();
-            this.txtTotalSold = new System.Windows.Forms.TextBox();
+            this.TxtTotalSold = new System.Windows.Forms.TextBox();
             this.txtTotalCurrQty = new System.Windows.Forms.TextBox();
-            this.txtShopRef = new System.Windows.Forms.TextBox();
+            this.TxtShopRef = new System.Windows.Forms.TextBox();
             this.txtTotalGarments = new System.Windows.Forms.TextBox();
             this.Label11 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtVAT = new System.Windows.Forms.TextBox();
             this.txtNet = new System.Windows.Forms.TextBox();
             this.txtVATRate = new System.Windows.Forms.TextBox();
-            this.txtSalesID = new System.Windows.Forms.TextBox();
+            this.TxtSalesID = new System.Windows.Forms.TextBox();
             this.Label10 = new System.Windows.Forms.Label();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label8 = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@ namespace StockController
             // CheckBox1
             // 
             this.CheckBox1.AutoSize = true;
-            this.CheckBox1.Location = new System.Drawing.Point(208, 136);
+            this.CheckBox1.Location = new System.Drawing.Point(108, 31);
             this.CheckBox1.Margin = new System.Windows.Forms.Padding(8);
             this.CheckBox1.Name = "CheckBox1";
             this.CheckBox1.Size = new System.Drawing.Size(117, 17);
@@ -87,56 +87,61 @@ namespace StockController
             // 
             // TxtStockCode
             // 
-            this.TxtStockCode.Location = new System.Drawing.Point(456, 74);
+            this.TxtStockCode.Location = new System.Drawing.Point(308, 69);
             this.TxtStockCode.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.TxtStockCode.Name = "TxtStockCode";
-            this.TxtStockCode.Size = new System.Drawing.Size(364, 20);
+            this.TxtStockCode.Size = new System.Drawing.Size(165, 20);
             this.TxtStockCode.TabIndex = 125;
+            this.TxtStockCode.Leave += new System.EventHandler(this.TxtStockCode_Leave);
             // 
             // cmdDelToGrid
             // 
-            this.cmdDelToGrid.Location = new System.Drawing.Point(1311, 63);
+            this.cmdDelToGrid.Location = new System.Drawing.Point(818, 100);
             this.cmdDelToGrid.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.cmdDelToGrid.Name = "cmdDelToGrid";
-            this.cmdDelToGrid.Size = new System.Drawing.Size(280, 73);
+            this.cmdDelToGrid.Size = new System.Drawing.Size(104, 29);
             this.cmdDelToGrid.TabIndex = 129;
             this.cmdDelToGrid.Text = "Delete";
             this.cmdDelToGrid.UseVisualStyleBackColor = true;
+            this.cmdDelToGrid.Click += new System.EventHandler(this.CmdDelToGrid_Click);
             // 
             // cmdAddToGrid
             // 
-            this.cmdAddToGrid.Location = new System.Drawing.Point(1205, 64);
+            this.cmdAddToGrid.Location = new System.Drawing.Point(704, 100);
             this.cmdAddToGrid.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.cmdAddToGrid.Name = "cmdAddToGrid";
-            this.cmdAddToGrid.Size = new System.Drawing.Size(192, 73);
+            this.cmdAddToGrid.Size = new System.Drawing.Size(104, 29);
             this.cmdAddToGrid.TabIndex = 128;
             this.cmdAddToGrid.Text = "Add";
             this.cmdAddToGrid.UseVisualStyleBackColor = true;
+            this.cmdAddToGrid.Click += new System.EventHandler(this.CmdAddToGrid_Click);
             // 
             // cmdCancel
             // 
-            this.cmdCancel.Location = new System.Drawing.Point(1311, 483);
+            this.cmdCancel.Location = new System.Drawing.Point(887, 417);
             this.cmdCancel.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.cmdCancel.Name = "cmdCancel";
-            this.cmdCancel.Size = new System.Drawing.Size(280, 73);
+            this.cmdCancel.Size = new System.Drawing.Size(104, 29);
             this.cmdCancel.TabIndex = 132;
             this.cmdCancel.Text = "Cancel";
             this.cmdCancel.UseVisualStyleBackColor = true;
+            this.cmdCancel.Click += new System.EventHandler(this.CmdCancel_Click);
             // 
             // cmdOK
             // 
-            this.cmdOK.Location = new System.Drawing.Point(1161, 483);
+            this.cmdOK.Location = new System.Drawing.Point(773, 417);
             this.cmdOK.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.cmdOK.Name = "cmdOK";
-            this.cmdOK.Size = new System.Drawing.Size(280, 73);
+            this.cmdOK.Size = new System.Drawing.Size(104, 29);
             this.cmdOK.TabIndex = 131;
             this.cmdOK.Text = "OK";
             this.cmdOK.UseVisualStyleBackColor = true;
+            this.cmdOK.Click += new System.EventHandler(this.CmdOK_Click);
             // 
             // Label20
             // 
             this.Label20.AutoSize = true;
-            this.Label20.Location = new System.Drawing.Point(766, 44);
+            this.Label20.Location = new System.Drawing.Point(575, 44);
             this.Label20.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label20.Name = "Label20";
             this.Label20.Size = new System.Drawing.Size(28, 13);
@@ -145,17 +150,17 @@ namespace StockController
             // 
             // txtSoldToDate
             // 
-            this.txtSoldToDate.Location = new System.Drawing.Point(761, 73);
+            this.txtSoldToDate.Location = new System.Drawing.Point(561, 70);
             this.txtSoldToDate.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtSoldToDate.Name = "txtSoldToDate";
-            this.txtSoldToDate.Size = new System.Drawing.Size(102, 20);
+            this.txtSoldToDate.Size = new System.Drawing.Size(66, 20);
             this.txtSoldToDate.TabIndex = 156;
             this.txtSoldToDate.TabStop = false;
             // 
             // Label19
             // 
             this.Label19.AutoSize = true;
-            this.Label19.Location = new System.Drawing.Point(666, 47);
+            this.Label19.Location = new System.Drawing.Point(489, 44);
             this.Label19.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label19.Name = "Label19";
             this.Label19.Size = new System.Drawing.Size(52, 13);
@@ -165,7 +170,7 @@ namespace StockController
             // Label18
             // 
             this.Label18.AutoSize = true;
-            this.Label18.Location = new System.Drawing.Point(823, 44);
+            this.Label18.Location = new System.Drawing.Point(634, 44);
             this.Label18.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label18.Name = "Label18";
             this.Label18.Size = new System.Drawing.Size(60, 13);
@@ -174,19 +179,19 @@ namespace StockController
             // 
             // txtCurrentQty
             // 
-            this.txtCurrentQty.Location = new System.Drawing.Point(824, 73);
+            this.txtCurrentQty.Location = new System.Drawing.Point(637, 70);
             this.txtCurrentQty.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtCurrentQty.Name = "txtCurrentQty";
-            this.txtCurrentQty.Size = new System.Drawing.Size(204, 20);
+            this.txtCurrentQty.Size = new System.Drawing.Size(59, 20);
             this.txtCurrentQty.TabIndex = 155;
             this.txtCurrentQty.TabStop = false;
             // 
             // txtDelivered
             // 
-            this.txtDelivered.Location = new System.Drawing.Point(656, 74);
+            this.txtDelivered.Location = new System.Drawing.Point(479, 70);
             this.txtDelivered.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtDelivered.Name = "txtDelivered";
-            this.txtDelivered.Size = new System.Drawing.Size(186, 20);
+            this.txtDelivered.Size = new System.Drawing.Size(71, 20);
             this.txtDelivered.TabIndex = 158;
             this.txtDelivered.TabStop = false;
             // 
@@ -194,32 +199,32 @@ namespace StockController
             // 
             this.lblShopName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblShopName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblShopName.Location = new System.Drawing.Point(29, 96);
+            this.lblShopName.Location = new System.Drawing.Point(479, 9);
             this.lblShopName.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.lblShopName.Name = "lblShopName";
-            this.lblShopName.Size = new System.Drawing.Size(742, 62);
+            this.lblShopName.Size = new System.Drawing.Size(363, 20);
             this.lblShopName.TabIndex = 162;
             // 
             // txtNetSale
             // 
-            this.txtNetSale.Location = new System.Drawing.Point(1026, 73);
+            this.txtNetSale.Location = new System.Drawing.Point(787, 69);
             this.txtNetSale.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtNetSale.Name = "txtNetSale";
-            this.txtNetSale.Size = new System.Drawing.Size(334, 20);
+            this.txtNetSale.Size = new System.Drawing.Size(135, 20);
             this.txtNetSale.TabIndex = 127;
             // 
             // txtQty
             // 
-            this.txtQty.Location = new System.Drawing.Point(938, 73);
+            this.txtQty.Location = new System.Drawing.Point(704, 70);
             this.txtQty.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(152, 20);
+            this.txtQty.Size = new System.Drawing.Size(63, 20);
             this.txtQty.TabIndex = 126;
             // 
             // Label14
             // 
             this.Label14.AutoSize = true;
-            this.Label14.Location = new System.Drawing.Point(1026, 51);
+            this.Label14.Location = new System.Drawing.Point(805, 44);
             this.Label14.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label14.Name = "Label14";
             this.Label14.Size = new System.Drawing.Size(51, 13);
@@ -229,7 +234,7 @@ namespace StockController
             // Label13
             // 
             this.Label13.AutoSize = true;
-            this.Label13.Location = new System.Drawing.Point(938, 51);
+            this.Label13.Location = new System.Drawing.Point(701, 45);
             this.Label13.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label13.Name = "Label13";
             this.Label13.Size = new System.Drawing.Size(46, 13);
@@ -251,67 +256,70 @@ namespace StockController
             this.DgvRecords.AllowUserToAddRows = false;
             this.DgvRecords.AllowUserToDeleteRows = false;
             this.DgvRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvRecords.Location = new System.Drawing.Point(412, 112);
+            this.DgvRecords.Location = new System.Drawing.Point(356, 143);
             this.DgvRecords.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.DgvRecords.Name = "DgvRecords";
             this.DgvRecords.RowHeadersVisible = false;
             this.DgvRecords.RowHeadersWidth = 51;
-            this.DgvRecords.Size = new System.Drawing.Size(2078, 719);
+            this.DgvRecords.Size = new System.Drawing.Size(635, 262);
             this.DgvRecords.TabIndex = 130;
+            this.DgvRecords.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvRecords_CellEndEdit);
             // 
             // DtpTransaction
             // 
-            this.DtpTransaction.Location = new System.Drawing.Point(121, 40);
+            this.DtpTransaction.Location = new System.Drawing.Point(108, 3);
             this.DtpTransaction.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.DtpTransaction.Name = "DtpTransaction";
-            this.DtpTransaction.Size = new System.Drawing.Size(554, 20);
+            this.DtpTransaction.Size = new System.Drawing.Size(177, 20);
             this.DtpTransaction.TabIndex = 123;
+            this.DtpTransaction.ValueChanged += new System.EventHandler(this.DtpTransaction_ValueChanged);
             // 
-            // txtTotalDelivered
+            // TxtTotalDelivered
             // 
-            this.txtTotalDelivered.Enabled = false;
-            this.txtTotalDelivered.Location = new System.Drawing.Point(647, 483);
-            this.txtTotalDelivered.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
-            this.txtTotalDelivered.Name = "txtTotalDelivered";
-            this.txtTotalDelivered.Size = new System.Drawing.Size(114, 20);
-            this.txtTotalDelivered.TabIndex = 149;
+            this.TxtTotalDelivered.Enabled = false;
+            this.TxtTotalDelivered.Location = new System.Drawing.Point(479, 414);
+            this.TxtTotalDelivered.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
+            this.TxtTotalDelivered.Name = "TxtTotalDelivered";
+            this.TxtTotalDelivered.Size = new System.Drawing.Size(62, 20);
+            this.TxtTotalDelivered.TabIndex = 149;
             // 
             // Label12
             // 
             this.Label12.AutoSize = true;
-            this.Label12.Location = new System.Drawing.Point(464, 47);
+            this.Label12.Location = new System.Drawing.Point(305, 44);
             this.Label12.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(66, 13);
             this.Label12.TabIndex = 160;
             this.Label12.Text = "Stock Code:";
             // 
-            // txtTotalSold
+            // TxtTotalSold
             // 
-            this.txtTotalSold.Enabled = false;
-            this.txtTotalSold.Location = new System.Drawing.Point(716, 483);
-            this.txtTotalSold.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
-            this.txtTotalSold.Name = "txtTotalSold";
-            this.txtTotalSold.Size = new System.Drawing.Size(140, 20);
-            this.txtTotalSold.TabIndex = 151;
+            this.TxtTotalSold.Enabled = false;
+            this.TxtTotalSold.Location = new System.Drawing.Point(561, 414);
+            this.TxtTotalSold.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
+            this.TxtTotalSold.Name = "TxtTotalSold";
+            this.TxtTotalSold.Size = new System.Drawing.Size(66, 20);
+            this.TxtTotalSold.TabIndex = 151;
             // 
             // txtTotalCurrQty
             // 
             this.txtTotalCurrQty.Enabled = false;
-            this.txtTotalCurrQty.Location = new System.Drawing.Point(798, 483);
+            this.txtTotalCurrQty.Location = new System.Drawing.Point(637, 414);
             this.txtTotalCurrQty.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtTotalCurrQty.Name = "txtTotalCurrQty";
-            this.txtTotalCurrQty.Size = new System.Drawing.Size(158, 20);
+            this.txtTotalCurrQty.Size = new System.Drawing.Size(57, 20);
             this.txtTotalCurrQty.TabIndex = 150;
             // 
-            // txtShopRef
+            // TxtShopRef
             // 
-            this.txtShopRef.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.txtShopRef.Location = new System.Drawing.Point(121, 71);
-            this.txtShopRef.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
-            this.txtShopRef.Name = "txtShopRef";
-            this.txtShopRef.Size = new System.Drawing.Size(204, 20);
-            this.txtShopRef.TabIndex = 124;
+            this.TxtShopRef.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.TxtShopRef.Location = new System.Drawing.Point(370, 6);
+            this.TxtShopRef.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
+            this.TxtShopRef.Name = "TxtShopRef";
+            this.TxtShopRef.Size = new System.Drawing.Size(103, 20);
+            this.TxtShopRef.TabIndex = 124;
+            this.TxtShopRef.Leave += new System.EventHandler(this.TxtShopRef_Leave);
             // 
             // txtTotalGarments
             // 
@@ -319,13 +327,13 @@ namespace StockController
             this.txtTotalGarments.Location = new System.Drawing.Point(126, 385);
             this.txtTotalGarments.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtTotalGarments.Name = "txtTotalGarments";
-            this.txtTotalGarments.Size = new System.Drawing.Size(364, 20);
+            this.txtTotalGarments.Size = new System.Drawing.Size(210, 20);
             this.txtTotalGarments.TabIndex = 146;
             // 
             // Label11
             // 
             this.Label11.AutoSize = true;
-            this.Label11.Location = new System.Drawing.Point(511, 477);
+            this.Label11.Location = new System.Drawing.Point(420, 417);
             this.Label11.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(39, 13);
@@ -338,7 +346,7 @@ namespace StockController
             this.txtTotal.Location = new System.Drawing.Point(126, 342);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(364, 20);
+            this.txtTotal.Size = new System.Drawing.Size(210, 20);
             this.txtTotal.TabIndex = 145;
             this.txtTotal.TabStop = false;
             // 
@@ -348,7 +356,7 @@ namespace StockController
             this.txtVAT.Location = new System.Drawing.Point(126, 300);
             this.txtVAT.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtVAT.Name = "txtVAT";
-            this.txtVAT.Size = new System.Drawing.Size(364, 20);
+            this.txtVAT.Size = new System.Drawing.Size(210, 20);
             this.txtVAT.TabIndex = 142;
             this.txtVAT.TabStop = false;
             // 
@@ -358,7 +366,7 @@ namespace StockController
             this.txtNet.Location = new System.Drawing.Point(126, 215);
             this.txtNet.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtNet.Name = "txtNet";
-            this.txtNet.Size = new System.Drawing.Size(364, 20);
+            this.txtNet.Size = new System.Drawing.Size(210, 20);
             this.txtNet.TabIndex = 139;
             this.txtNet.TabStop = false;
             // 
@@ -367,25 +375,25 @@ namespace StockController
             this.txtVATRate.Location = new System.Drawing.Point(126, 258);
             this.txtVATRate.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
             this.txtVATRate.Name = "txtVATRate";
-            this.txtVATRate.Size = new System.Drawing.Size(284, 20);
+            this.txtVATRate.Size = new System.Drawing.Size(130, 20);
             this.txtVATRate.TabIndex = 135;
             // 
-            // txtSalesID
+            // TxtSalesID
             // 
-            this.txtSalesID.BackColor = System.Drawing.Color.White;
-            this.txtSalesID.Location = new System.Drawing.Point(295, 71);
-            this.txtSalesID.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
-            this.txtSalesID.Name = "txtSalesID";
-            this.txtSalesID.Size = new System.Drawing.Size(128, 20);
-            this.txtSalesID.TabIndex = 133;
-            this.txtSalesID.TabStop = false;
+            this.TxtSalesID.BackColor = System.Drawing.Color.White;
+            this.TxtSalesID.Location = new System.Drawing.Point(900, 6);
+            this.TxtSalesID.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
+            this.TxtSalesID.Name = "TxtSalesID";
+            this.TxtSalesID.Size = new System.Drawing.Size(56, 20);
+            this.TxtSalesID.TabIndex = 133;
+            this.TxtSalesID.TabStop = false;
             // 
             // Label10
             // 
             this.Label10.AutoSize = true;
             this.Label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label10.ForeColor = System.Drawing.Color.Fuchsia;
-            this.Label10.Location = new System.Drawing.Point(49, 67);
+            this.Label10.Location = new System.Drawing.Point(305, 9);
             this.Label10.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(64, 13);
@@ -457,7 +465,7 @@ namespace StockController
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(23, 41);
+            this.Label2.Location = new System.Drawing.Point(13, 9);
             this.Label2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(92, 13);
@@ -467,7 +475,7 @@ namespace StockController
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(235, 74);
+            this.Label1.Location = new System.Drawing.Point(843, 10);
             this.Label1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(50, 13);
@@ -478,7 +486,7 @@ namespace StockController
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1765, 831);
+            this.ClientSize = new System.Drawing.Size(1000, 455);
             this.Controls.Add(this.CheckBox1);
             this.Controls.Add(this.TxtStockCode);
             this.Controls.Add(this.cmdDelToGrid);
@@ -499,18 +507,18 @@ namespace StockController
             this.Controls.Add(this.Label15);
             this.Controls.Add(this.DgvRecords);
             this.Controls.Add(this.DtpTransaction);
-            this.Controls.Add(this.txtTotalDelivered);
+            this.Controls.Add(this.TxtTotalDelivered);
             this.Controls.Add(this.Label12);
-            this.Controls.Add(this.txtTotalSold);
+            this.Controls.Add(this.TxtTotalSold);
             this.Controls.Add(this.txtTotalCurrQty);
-            this.Controls.Add(this.txtShopRef);
+            this.Controls.Add(this.TxtShopRef);
             this.Controls.Add(this.txtTotalGarments);
             this.Controls.Add(this.Label11);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtVAT);
             this.Controls.Add(this.txtNet);
             this.Controls.Add(this.txtVATRate);
-            this.Controls.Add(this.txtSalesID);
+            this.Controls.Add(this.TxtSalesID);
             this.Controls.Add(this.Label10);
             this.Controls.Add(this.Label9);
             this.Controls.Add(this.Label8);
@@ -551,18 +559,18 @@ namespace StockController
         internal System.Windows.Forms.Label Label15;
         internal System.Windows.Forms.DataGridView DgvRecords;
         internal System.Windows.Forms.DateTimePicker DtpTransaction;
-        internal System.Windows.Forms.TextBox txtTotalDelivered;
+        internal System.Windows.Forms.TextBox TxtTotalDelivered;
         internal System.Windows.Forms.Label Label12;
-        internal System.Windows.Forms.TextBox txtTotalSold;
+        internal System.Windows.Forms.TextBox TxtTotalSold;
         internal System.Windows.Forms.TextBox txtTotalCurrQty;
-        internal System.Windows.Forms.TextBox txtShopRef;
+        internal System.Windows.Forms.TextBox TxtShopRef;
         internal System.Windows.Forms.TextBox txtTotalGarments;
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.TextBox txtTotal;
         internal System.Windows.Forms.TextBox txtVAT;
         internal System.Windows.Forms.TextBox txtNet;
         internal System.Windows.Forms.TextBox txtVATRate;
-        internal System.Windows.Forms.TextBox txtSalesID;
+        internal System.Windows.Forms.TextBox TxtSalesID;
         internal System.Windows.Forms.Label Label10;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label8;

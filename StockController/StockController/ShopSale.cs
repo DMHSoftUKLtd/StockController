@@ -26,7 +26,7 @@ namespace StockController
             {
                 FormMode = "Old"
             };
-            shopSale.txtSalesID.Text = SalesID.ToString();
+            shopSale.TxtSalesID.Text = SalesID.ToString();
             shopSale.Show();
         }
         public int GetLastShopSaleHead()
